@@ -21,6 +21,7 @@ class Main:
             "peliculas": "/es/movies",
             "series": "/es/series"
         }
+        # https://www.starz.com/us/en/view-all/blocks/1575858 <- Contiene todas las peliculas en ingles, no hay equivalente en español
 
         # Opciones de Selenium
         self.options = webdriver.ChromeOptions()

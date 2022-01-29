@@ -3,6 +3,10 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 
+# Para guardar la informacion
+import json
+from pymongo import MongoClient
+
 # Las siguientes tres las uso para esperar a que Selenium detecte que la página renderizó las peliculas/series
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -21,11 +25,14 @@ class Main:
             "peliculas": "/es/movies",
             "series": "/es/series"
         }
-        # https://www.starz.com/us/en/view-all/blocks/1575858 <- Contiene todas las peliculas en ingles, no hay equivalente en español
 
         # Opciones de Selenium
         self.options = webdriver.ChromeOptions()
         self.options.add_argument('--headless')
+
+        # Opciones de Mongo
+        CONNECTION_STRING = "mongodb://localhost:27020/BBTestScraping"
+        self.client = MongoClient(CONNECTION_STRING)
 
     # Funciones
 
@@ -107,7 +114,8 @@ class Main:
             director = soup.find("div", {"class": "directors"}).find("span").text
 
             pelicula = Pelicula(titulo, anio, sinopsis, link, duracion, director)
-            peliculas.add(pelicula)
+            self.guardarEnDB(pelicula)
+            peliculas.add(pelicula.__dict__)
         
         for elem in set_elementos: instanciarPelicula(elem)
 
@@ -115,40 +123,80 @@ class Main:
         browser.quit()
         return peliculas
 
-    def scrapSeries(self):
+    def scrapSeries(self) -> set:
         series = set() # Set de objetos de clase Serie
         browser = self.configurarSelenium()
         set_elementos = self.obtenerElementos(browser, "series") # Reune todos los elementos de la lista
 
         # Por cada elemento, tomar la información e instanciarlo en un objeto Serie
         def instanciarSerie(elemento):
-            print(elemento.prettify())
             link = self.WEB_URL + '/' + elemento["href"]
             titulo = elemento.find("p", {"class": "title"}).text
             info = elemento.find("p", {"class": "text-body"})
             # <info> devuelve una lista de 4 elementos span, donde la 3ra corresponde a los episodios y la 4ta al año
+            anio = info.find_all("span")[-1].text.split(",") # Si la serie terminó, se divide en una lista [desde, hasta], sino [desde]
+            if len(anio) == 2:
+                anio = {
+                    "desde": anio[0],
+                    "hasta": anio[1]
+                }
+            else: anio = anio[0]
+            cantidad_episodios = int(info.find_all("span")[2].find_all("span")[0].text)
 
-            anio = info.find_all("span")[-1].text
-            cantidad_episodios = int(info.find_all("span")[-2].find_all("span")[0].text)
-            # esta etiqueta se divide en dos etiquetas span: ["n","Episodio/s"], solo interesa n.
+            # Redirecciona al link de la serie para tener más información, como la sinopsis y los episodios.
+            browser.get(link)
+            WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "series-details-page"))) # Espera a los detalles de la serie
+            html_doc = browser.page_source
+            soup = BeautifulSoup(html_doc, 'html.parser')
+            
+            sinopsis = soup.find("div", {"class": "logline"}).find("p").text
+            
+            detalle_episodios = [] # Una lista donde por cada episodio se guarda información como nombre, sinopsis, duración y año de estreno.
+
+            lista_episodios = soup.find("div", {"class": "episodes-container"}).find_all("div", {"class": "episode-container"})
+            for episodio in lista_episodios:
+                metadata = episodio.find("ul", {"class": "meta-list"}).find_all("li")
+                informacion = {
+                    "nombre": episodio.find("h6", {"class": "title"}).text,
+                    "sinopsis" : soup.find("div", {"class": "logline"}).find("p").text,
+                    "duracion" : metadata[1].text,
+                    "anio": metadata[2].text
+                }
+                detalle_episodios.append(informacion)
             episodios = {
                 "cantidad": cantidad_episodios,
-
+                "listado": detalle_episodios
             }
-            sinopsis = "PENDIENTE"
+
             serie = Serie(titulo, anio, sinopsis, link, episodios)
-            series.add(serie)
+            
+            self.guardarEnDB(serie) # Lo guarda en la BD
+            series.add(serie.__dict__) # Lo agrega al set como diccionario
 
         for elem in set_elementos: instanciarSerie(elem)
         browser.quit()
         return series
+
+    def guardarEnDB(self, elem):
+        db = self.client["starz"]
+        collection = db["series"] if type(elem) == Serie else db["peliculas"]
+        collection.insert_one(elem.__dict__)
+    
+    def guardarSetsEnJSON(peliculas: set, series: set):
+        with open('peliculas.json', 'w', encoding='utf-8') as f:
+            json.dump(peliculas, f, ensure_ascii=False, indent=4)
+        
+        with open('series.json', 'w', encoding='utf-8') as f:
+            json.dump(series, f, ensure_ascii=False, indent=4)
+
 
 
 # Ejecucion
 if __name__ == "__main__":
     main = Main()
     set_series = main.scrapSeries()
-    #set_peliculas = main.scrapPeliculas()
+    set_peliculas = main.scrapPeliculas()
+    main.guardarSetsEnJSON(peliculas=set_peliculas, series=set_series)
 
 
 

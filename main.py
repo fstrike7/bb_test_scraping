@@ -62,7 +62,6 @@ class Main:
         
         WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "view-item-text")))# Espera hasta que se renderice el texto de cada pelicula
         
-        # Ya una vez en el listado de peliculas/series, se reunen todos los elementos y se devuelven en un set
         def obtenerLargoDocumento(browser):
             # Obtiene el largo del documento, para ello busca el valor de Y en la propiedad transform del elemento scrollable-content
             scrollable = browser.find_element(By.CLASS_NAME,"scrollable-content")
@@ -132,7 +131,8 @@ class Main:
                 print(e.args)
             peliculas.append(pelicula.__dict__)
         browser.quit()
-        self.exportarJSON("peliculas", db) # Exporta la coleccion a un archivo .json
+        # Una vez que se iteró todos los elementos y la colección contiene todos los documentos, se exporta como archivo .json
+        self.exportarJSON("peliculas", db)
 
     def scrapSeries(self) -> None:
         series = [] # Set de objetos de clase Serie
@@ -148,7 +148,7 @@ class Main:
             titulo = elemento.find("p", {"class": "title"}).text
             info = elemento.find("p", {"class": "text-body"})
             # <info> devuelve una lista de 4 elementos span, donde la 3ra corresponde a los episodios y la 4ta al año
-            anio = info.find_all("span")[-1].text.split(",") # Si la serie terminó, se divide en una lista [desde, hasta], sino [desde]
+            anio = info.find_all("span")[-1].text.split("-") # Si la serie finalizó, se divide en una lista [desde, hasta], sino [desde]
             if len(anio) == 2:
                 anio = {
                     "desde": anio[0],
@@ -234,13 +234,14 @@ class Main:
         print(f"Archivo {archivo} generado")
 
     def run(self):
-        resultados = []
+        resultados = [] # Lista de funciones
         with Pool() as pool:
+            # Agrega a la lista
             resultados.append(pool.apply_async(self.scrapPeliculas))
             resultados.append(pool.apply_async(self.scrapSeries))
 
             for r in resultados:
-                r.wait()
+                r.wait() # Espera a que finalicen ambos procesos
 
 
 
@@ -248,6 +249,5 @@ class Main:
 if __name__ == "__main__":
     app = Main()
     app.run()
-
     print("Finalizado")
 

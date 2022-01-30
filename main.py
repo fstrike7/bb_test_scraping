@@ -1,7 +1,12 @@
 from importlib.resources import path
+from bson.json_util import dumps
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import time
+from webdriver_manager.chrome import ChromeDriverManager
+import time, os
+
+# Para multiprocesamiento
+from multiprocessing import Pool
 
 # Para guardar la informacion
 import json
@@ -11,6 +16,7 @@ from pymongo import MongoClient
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.chrome.service import Service
 
 # Importamos clases
 from item import Pelicula, Serie
@@ -30,15 +36,17 @@ class Main:
         self.options = webdriver.ChromeOptions()
         self.options.add_argument('--headless')
 
-        # Opciones de Mongo
-        CONNECTION_STRING = "mongodb://localhost:27020/BBTestScraping"
-        self.client = MongoClient(CONNECTION_STRING)
-
     # Funciones
+    def configurarMongo(self):
+        # Opciones de Mongo
+        client = MongoClient("localhost", 27017)
+        db = client["starz"]
+        return db
 
     def configurarSelenium(self) -> webdriver:
         # Configuracion de Selenium
-        browser = webdriver.Chrome(options=self.options, executable_path='./driver/chromedriver.exe')
+        s=Service(ChromeDriverManager().install())
+        browser = webdriver.Chrome(service=s, options=self.options)
         return browser
 
 
@@ -86,23 +94,25 @@ class Main:
         
         return set_elementos
 
-    def scrapPeliculas(self):
+    def scrapPeliculas(self) -> None:
 
-        peliculas = set() # Set de objetos de clase Pelicula
+        peliculas = [] # Lista de objetos de clase Pelicula
         browser = self.configurarSelenium()
+        db = self.configurarMongo()
         set_elementos = self.obtenerElementos(browser, "peliculas") # Reune todos los elementos de la lista
-        browser.quit()
 
-        # De un elemento, tomar la información importante e instanciarlo en un objeto Pelicula
-        def instanciarPelicula(elemento):
+        # Por elemento, tomar la información importante e instanciarlo en un objeto Pelicula
+        for elemento in set_elementos:
+            link = self.WEB_URL + '/' + elemento["href"] # link puede ser tomado como id porque es único por elemento
+            # Para evitar escribir el mismo documento dos veces, comprueba si existe en la DB
+            if self.existeEnDB(link, db): return
 
-            link = self.WEB_URL + '/' + elemento["href"]
             titulo = elemento.find("p", {"class": "title"}).text
             info = elemento.find("p", {"class": "text-body"})
             # <info> devuelve un array con tres etiquetas span.
             duracion, anio = [info.find_all("span")[i].text for i in (0, -1)]
             # <duracion> y <anio> toman el primer y último valor que corresponden a la duración en minutos y el año de salida.
-            duracion = int(duracion)
+            duracion = duracion + " minutos"
 
             # Redirecciona al link de la pelicula para tener más información, como la sinopsis y el director.
             browser.get(link)
@@ -114,23 +124,27 @@ class Main:
             director = soup.find("div", {"class": "directors"}).find("span").text
 
             pelicula = Pelicula(titulo, anio, sinopsis, link, duracion, director)
-            self.guardarEnDB(pelicula)
-            peliculas.add(pelicula.__dict__)
-        
-        for elem in set_elementos: instanciarPelicula(elem)
-
-        print(f"Cantidad de peliculas encontradas: {len(peliculas)}")
+            try:
+                self.guardarEnDB(pelicula, db) # Lo guarda en la BD
+                print(f"Pelicula: {titulo} guardada en la base de datos")
+            except Exception as e:
+                print(f"Hubo un error y no se pudo guardar la pelicula {titulo} en la base de datos.")
+                print(e.args)
+            peliculas.append(pelicula.__dict__)
         browser.quit()
-        return peliculas
+        self.exportarJSON("peliculas", db) # Exporta la coleccion a un archivo .json
 
-    def scrapSeries(self) -> set:
-        series = set() # Set de objetos de clase Serie
+    def scrapSeries(self) -> None:
+        series = [] # Set de objetos de clase Serie
         browser = self.configurarSelenium()
+        db = self.configurarMongo()
         set_elementos = self.obtenerElementos(browser, "series") # Reune todos los elementos de la lista
 
         # Por cada elemento, tomar la información e instanciarlo en un objeto Serie
-        def instanciarSerie(elemento):
+        for elemento in set_elementos:
             link = self.WEB_URL + '/' + elemento["href"]
+            if self.existeEnDB(link, db): return
+
             titulo = elemento.find("p", {"class": "title"}).text
             info = elemento.find("p", {"class": "text-body"})
             # <info> devuelve una lista de 4 elementos span, donde la 3ra corresponde a los episodios y la 4ta al año
@@ -151,53 +165,89 @@ class Main:
             
             sinopsis = soup.find("div", {"class": "logline"}).find("p").text
             
+            elem_temporadas = soup.find_all("div", {"class": "season-number"}) # elemento del DOM que contiene la cantidad de temporadas
             detalle_episodios = [] # Una lista donde por cada episodio se guarda información como nombre, sinopsis, duración y año de estreno.
+            def scrapTemporada(temporada):
+                link = self.WEB_URL + '/' + temporada.find("a")["href"][4:]
+                browser.get(link)
+                WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "episodes-container")))
+                html_doc = browser.page_source
+                season = BeautifulSoup(html_doc, 'html.parser')
 
-            lista_episodios = soup.find("div", {"class": "episodes-container"}).find_all("div", {"class": "episode-container"})
-            for episodio in lista_episodios:
-                metadata = episodio.find("ul", {"class": "meta-list"}).find_all("li")
-                informacion = {
-                    "nombre": episodio.find("h6", {"class": "title"}).text,
-                    "sinopsis" : soup.find("div", {"class": "logline"}).find("p").text,
-                    "duracion" : metadata[1].text,
-                    "anio": metadata[2].text
-                }
-                detalle_episodios.append(informacion)
+                lista_episodios = season.find("div", {"class": "episodes-container"}).find_all("div", {"class": "episode-container"})
+                for episodio in lista_episodios:
+                    ep_titulo = episodio.find("h6", {"class": "title"}).text
+                    ep_sinopsis = episodio.find("div", {"class": "logline"}).find("p").text
+                    if ep_titulo == "Tráiler oficial": break # Ignora el trailer
+                    metadata = episodio.find("ul", {"class": "meta-list"}).find_all("li")
+                    informacion = {
+                        "nombre": ep_titulo,
+                        "sinopsis" : ep_sinopsis,
+                        "duracion" : metadata[1].text + " minutos",
+                        "anio": metadata[2].text
+                    }
+                    detalle_episodios.append(informacion)
+
+            for temporada in elem_temporadas: scrapTemporada(temporada)
             episodios = {
                 "cantidad": cantidad_episodios,
-                "listado": detalle_episodios
+                "temporadas": len(elem_temporadas),
+                "detalles": detalle_episodios
             }
 
             serie = Serie(titulo, anio, sinopsis, link, episodios)
             
-            self.guardarEnDB(serie) # Lo guarda en la BD
-            series.add(serie.__dict__) # Lo agrega al set como diccionario
+            try:
+                self.guardarEnDB(serie, db) # Lo guarda en la BD
+                print(f"Serie: {titulo} guardada en la base de datos")
+            except Exception as e:
+                print(f"Hubo un error y no se pudo guardar la serie {titulo} en la base de datos:")
+                print(e.args)
 
-        for elem in set_elementos: instanciarSerie(elem)
+            series.append(serie.__dict__) # Lo agrega a la lista como diccionario
+
         browser.quit()
-        return series
+        self.exportarJSON("series", db)
 
-    def guardarEnDB(self, elem):
-        db = self.client["starz"]
-        collection = db["series"] if type(elem) == Serie else db["peliculas"]
-        collection.insert_one(elem.__dict__)
+    def existeEnDB(self, link, db) -> bool:
+        coleccion = db["series"] if link.split("/")[4] == "series" else db["peliculas"]
+        cantidad_documentos = 0
+        try:
+            cantidad_documentos = coleccion.count_documents({"_link": link})
+        except Exception as e:
+            # La primera vez no va a encontrar la coleccion y entra aca, pero no hace falta notificarlo
+            pass
+        return cantidad_documentos > 0
+
+    def guardarEnDB(self, elem, db):
+        coleccion = db["series"] if type(elem) == Serie else db["peliculas"]
+        coleccion.insert_one(elem.__dict__)
+        print(f"{coleccion.count_documents({})} elementos guardados en la coleccion {coleccion.name}.")
     
-    def guardarSetsEnJSON(peliculas: set, series: set):
-        with open('peliculas.json', 'w', encoding='utf-8') as f:
-            json.dump(peliculas, f, ensure_ascii=False, indent=4)
-        
-        with open('series.json', 'w', encoding='utf-8') as f:
-            json.dump(series, f, ensure_ascii=False, indent=4)
+    def exportarJSON(self, coleccion, db): # Toma la colección directamente de la base de datos y la exporta como .json
+        coleccion = db[coleccion] 
+
+        cursor = coleccion.find({})
+        archivo = f"{coleccion.name}.json"
+        with open(archivo, 'w', encoding='utf-8') as f:
+            json.dump(json.loads(dumps(cursor)), f, ensure_ascii=False, indent=4)
+        print(f"Archivo {archivo} generado")
+
+    def run(self):
+        resultados = []
+        with Pool() as pool:
+            resultados.append(pool.apply_async(self.scrapPeliculas))
+            resultados.append(pool.apply_async(self.scrapSeries))
+
+            for r in resultados:
+                r.wait()
 
 
 
 # Ejecucion
 if __name__ == "__main__":
-    main = Main()
-    set_series = main.scrapSeries()
-    set_peliculas = main.scrapPeliculas()
-    main.guardarSetsEnJSON(peliculas=set_peliculas, series=set_series)
+    app = Main()
+    app.run()
 
-
-
+    print("Finalizado")
 

@@ -35,24 +35,51 @@ class Main:
         # Opciones de Selenium
         self.options = webdriver.ChromeOptions()
         self.options.add_argument('--headless')
+        self.options.add_argument('log-level=2')
+        """
+        log-level: 
+        Establece el nivel de log mínimo.
+        Los valores válidos son de 0 a 3: 
+            INFO = 0, 
+            WARNING = 1, 
+            LOG_ERROR = 2, 
+            LOG_FATAL = 3.
+        """
 
     # Funciones
     def configurarMongo(self):
         # Opciones de Mongo
-        client = MongoClient("localhost", 27017)
-        db = client["starz"]
-        return db
+        try:
+            client = MongoClient("localhost", 27017)
+            db = client["starz"]
+            return db
+        except Exception as e:
+            print("Ocurrió un error conectandose a la base de datos en MongoDB: ")
+            print(e.args)
+            os.exit()
 
     def configurarSelenium(self) -> webdriver:
         # Configuracion de Selenium
-        s=Service(ChromeDriverManager().install())
-        browser = webdriver.Chrome(service=s, options=self.options)
-        return browser
+        try:
+            s=Service(ChromeDriverManager().install())
+            browser = webdriver.Chrome(service=s, options=self.options)
+            return browser
+        except Exception as e:
+            if e.__class__.__name__ == "SessionNotCreatedException":
+                # Este error se da cuando la sesión no se puede crear porque la versión del navegador con la del driver son incompatibles
+                # para solucionarlo usamos un driver propio que se encuentra en la carpeta driver.
+                s=Service("./driver/chromedriver.exe")
+                browser = webdriver.Chrome(service=s, options=self.options)
+                return browser
+            print("Ocurrió un error configurando Selenium:")
+            print(e.args)
+            os.exit()
 
 
     def obtenerElementos(self, browser, path) -> set:
         # Al tener ambas páginas (movies y series) la misma estructura, se repite el proceso de renderizar, moverse y tomar los elementos.
         url = self.WEB_URL + self.PATHS[path]
+        print(f"Obteniendo elementos desde {url}")
         browser.get(url)
         WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "view-all"))) # Espera al boton "Ver todos"
         WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CLASS_NAME, "view-all"))).click() # y lo clickea
@@ -90,47 +117,64 @@ class Main:
             new_height = obtenerLargoDocumento(browser)
             if new_height == last_height: break
             last_height = new_height
+
+        print(f"{len(set_elementos)} elementos encontrados para la coleccion {path}")
         
         return set_elementos
 
     def scrapPeliculas(self) -> None:
 
         peliculas = [] # Lista de objetos de clase Pelicula
-        browser = self.configurarSelenium()
-        db = self.configurarMongo()
-        set_elementos = self.obtenerElementos(browser, "peliculas") # Reune todos los elementos de la lista
+        browser = self.configurarSelenium() # Devuelve un driver de Selenium
+        db = self.configurarMongo() # Devuelve una instancia de la base de datos "starz"
+        set_elementos = self.obtenerElementos(browser, "peliculas") # Reune todos los elementos del listado de la página
 
         # Por elemento, tomar la información importante e instanciarlo en un objeto Pelicula
         for elemento in set_elementos:
             link = self.WEB_URL + '/' + elemento["href"] # link puede ser tomado como id porque es único por elemento
             # Para evitar escribir el mismo documento dos veces, comprueba si existe en la DB
-            if self.existeEnDB(link, db): return
+            if self.existeEnDB(link, db): continue # Si existe, saltea a la siguiente iteración
+            print(f"Scrapeando: {link}")
 
             titulo = elemento.find("p", {"class": "title"}).text
             info = elemento.find("p", {"class": "text-body"})
             # <info> devuelve un array con tres etiquetas span.
             duracion, anio = [info.find_all("span")[i].text for i in (0, -1)]
             # <duracion> y <anio> toman el primer y último valor que corresponden a la duración en minutos y el año de salida.
-            duracion = duracion + " minutos"
+            duracion = int(duracion)
+            anio = int(anio)
 
-            # Redirecciona al link de la pelicula para tener más información, como la sinopsis y el director.
-            browser.get(link)
+            browser.get(link) # Redirecciona al link de la pelicula para tener más información, como la sinopsis y el director.
             WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "movie-details-page"))) # Espera a los detalles de la pelicula
+            try:
+                # Si la sinopsis está parcialmente oculta, espera al botón para expandir la info:
+                WebDriverWait(browser, 10).until(EC.element_to_be_clickable(browser.find_element(By.XPATH, "//button[@class='more-link more-button show']"))).click()
+            except Exception as e:
+                # No encontró un botón "...MÁS"
+                pass # Continua
+
             html_doc = browser.page_source
             soup = BeautifulSoup(html_doc, 'html.parser')
 
             sinopsis = soup.find("div", {"class": "logline"}).find("p").text
             director = soup.find("div", {"class": "directors"}).find("span").text
 
-            pelicula = Pelicula(titulo, anio, sinopsis, link, duracion, director)
+            # Instanciar objeto Pelicula
+            pelicula = Pelicula()
+            pelicula.setTitulo(titulo)
+            pelicula.setAnio(anio)
+            pelicula.setSinopsis(sinopsis)
+            pelicula.setLink(link)
+            pelicula.setDirector(director)
             try:
                 self.guardarEnDB(pelicula, db) # Lo guarda en la BD
                 print(f"Pelicula: {titulo} guardada en la base de datos")
             except Exception as e:
                 print(f"Hubo un error y no se pudo guardar la pelicula {titulo} en la base de datos.")
                 print(e.args)
-            peliculas.append(pelicula.__dict__)
-        browser.quit()
+            peliculas.append(pelicula.__dict__) # Convierte todos los atributos del objeto a un diccionario y lo guarda en la lista de peliculas
+        browser.close()
+
         # Una vez que se iteró todos los elementos y la colección contiene todos los documentos, se exporta como archivo .json
         self.exportarJSON("peliculas", db)
 
@@ -143,7 +187,8 @@ class Main:
         # Por cada elemento, tomar la información e instanciarlo en un objeto Serie
         for elemento in set_elementos:
             link = self.WEB_URL + '/' + elemento["href"]
-            if self.existeEnDB(link, db): return
+            if self.existeEnDB(link, db): continue
+            print(f"Scrapeando: {link}")
 
             titulo = elemento.find("p", {"class": "title"}).text
             info = elemento.find("p", {"class": "text-body"})
@@ -151,10 +196,10 @@ class Main:
             anio = info.find_all("span")[-1].text.split("-") # Si la serie finalizó, se divide en una lista [desde, hasta], sino [desde]
             if len(anio) == 2:
                 anio = {
-                    "desde": anio[0],
-                    "hasta": anio[1]
+                    "desde": int(anio[0]),
+                    "hasta": int(anio[1])
                 }
-            else: anio = anio[0]
+            else: anio = {"desde": int(anio[0])}
             cantidad_episodios = int(info.find_all("span")[2].find_all("span")[0].text)
 
             # Redirecciona al link de la serie para tener más información, como la sinopsis y los episodios.
@@ -166,11 +211,20 @@ class Main:
             sinopsis = soup.find("div", {"class": "logline"}).find("p").text
             
             elem_temporadas = soup.find_all("div", {"class": "season-number"}) # elemento del DOM que contiene la cantidad de temporadas
+            elem_temporadas = [ self.WEB_URL + '/' + temporada.find("a")["href"][4:] for temporada in elem_temporadas ] # Mapear cada elemento para extraer el link de esa temporada
             detalle_episodios = [] # Una lista donde por cada episodio se guarda información como nombre, sinopsis, duración y año de estreno.
             def scrapTemporada(temporada):
-                link = self.WEB_URL + '/' + temporada.find("a")["href"][4:]
-                browser.get(link)
+                browser.get(temporada)
                 WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "episodes-container")))
+                
+                # Por cada episodio, si la sinopsis está parcialmente oculta, toca el botón "...MÁS":
+                try:
+                    WebDriverWait(browser, 10).until(EC.element_to_be_clickable(browser.find_element(By.XPATH, "//button[@class='more-link more-button show']")))
+                    for element in browser.find_elements(By.XPATH, "//button[@class='more-link more-button show']"): element.click()
+                except Exception as e:
+                    # No encontró botones
+                    pass
+
                 html_doc = browser.page_source
                 season = BeautifulSoup(html_doc, 'html.parser')
 
@@ -187,15 +241,21 @@ class Main:
                         "anio": metadata[2].text
                     }
                     detalle_episodios.append(informacion)
-
             for temporada in elem_temporadas: scrapTemporada(temporada)
             episodios = {
                 "cantidad": cantidad_episodios,
                 "temporadas": len(elem_temporadas),
                 "detalles": detalle_episodios
             }
-
-            serie = Serie(titulo, anio, sinopsis, link, episodios)
+            
+            # Instanciar serie
+            print("Instanciando")
+            serie = Serie()
+            serie.setTitulo(titulo)
+            serie.setAnio(anio)
+            serie.setSinopsis(sinopsis)
+            serie.setLink(link)
+            serie.setEpisodios(episodios)
             
             try:
                 self.guardarEnDB(serie, db) # Lo guarda en la BD
@@ -206,7 +266,7 @@ class Main:
 
             series.append(serie.__dict__) # Lo agrega a la lista como diccionario
 
-        browser.quit()
+        browser.close()
         self.exportarJSON("series", db)
 
     def existeEnDB(self, link, db) -> bool:
@@ -215,6 +275,8 @@ class Main:
         try:
             cantidad_documentos = coleccion.count_documents({"_link": link})
         except Exception as e:
+            print(e.__class__.__name__)
+            print(e.args)
             # La primera vez no va a encontrar la coleccion y entra aca, pero no hace falta notificarlo
             pass
         return cantidad_documentos > 0

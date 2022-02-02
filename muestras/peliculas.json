@@ -1,0 +1,1712 @@
+[
+    {
+        "_id": {
+            "$oid": "61fa445615e6ee3dde639895"
+        },
+        "_titulo": "Dulce venganza",
+        "_anio": 2010,
+        "_sinopsis": "Este remake del clásico de 1978 del mismo nombre, cuenta la historia de una mujer que es brutalmente violada y asaltada por cuatro hombres,",
+        "_link": "https://www.starz.com/ar/movies/dulce-venganza-9303",
+        "_director": "Steven R. Monroe"
+    },
+    {
+        "_id": {
+            "$oid": "61fa445a15e6ee3dde639896"
+        },
+        "_titulo": "Ranchero",
+        "_anio": 2011,
+        "_sinopsis": "Este crudo drama estelarizado por Danny Trejo (MACHETE) \nsigue la vida de dos fracasados hombres de mediana edad y su batalla con las drogas, las",
+        "_link": "https://www.starz.com/ar/movies/ranchero-63541",
+        "_director": "Richard Kaponas"
+    },
+    {
+        "_id": {
+            "$oid": "61fa445d15e6ee3dde639897"
+        },
+        "_titulo": "Los juegos del hambre: En llamas",
+        "_anio": 2013,
+        "_sinopsis": "Katniss Everdeen ha regresado a casa a salvo después de ganar los 74º juegos anuales del Hambre. Siente que una rebelión se avecina, pero el",
+        "_link": "https://www.starz.com/ar/movies/los-juegos-del-hambre-en-llamas-50815",
+        "_director": "Francis Lawrence"
+    },
+    {
+        "_id": {
+            "$oid": "61fa446115e6ee3dde639898"
+        },
+        "_titulo": "Asesino: Misión venganza",
+        "_anio": 2017,
+        "_sinopsis": "Stan Hurley, un veterano de la Guerra Fría, recluta y entrena a Mitch Rapp, cuya novia murió en un ataque terrorista. Con la colaboración de una",
+        "_link": "https://www.starz.com/ar/movies/asesino-misión-venganza-62690",
+        "_director": "Michael Cuesta"
+    },
+    {
+        "_id": {
+            "$oid": "61fa446415e6ee3dde639899"
+        },
+        "_titulo": "Father Figures",
+        "_anio": 2017,
+        "_sinopsis": "Dos hermanos mellizos crecieron pensando que su padre había muerto, pero descubren que está vivo y emprenden un viaje para encontrarlo. No será",
+        "_link": "https://www.starz.com/ar/movies/father-figures-62698",
+        "_director": "Lawrence Sher"
+    },
+    {
+        "_id": {
+            "$oid": "61fa446815e6ee3dde63989a"
+        },
+        "_titulo": "Repugnante",
+        "_anio": 2014,
+        "_sinopsis": "Un oficial de policía drogadicto planea arruinar las posibilidades de ascenso de sus colegas por cualquier medio, incluyendo contar secretos y",
+        "_link": "https://www.starz.com/ar/movies/repugnante-52012",
+        "_director": "Jon S. Baird"
+    },
+    {
+        "_id": {
+            "$oid": "61fa446b15e6ee3dde63989b"
+        },
+        "_titulo": "Testigo de cargo",
+        "_anio": 2017,
+        "_sinopsis": "La historia está ambientada en el Londres de la década de 1920 y se centra en un asesinato, \"brutal y sanguinario\", que ha \"manchado las lujosas",
+        "_link": "https://www.starz.com/ar/movies/testigo-de-cargo-62754",
+        "_director": "Julian Jarrold"
+    },
+    {
+        "_id": {
+            "$oid": "61fa446e15e6ee3dde63989c"
+        },
+        "_titulo": "El castillo de cristal",
+        "_anio": 2017,
+        "_sinopsis": "Aventuras extravagantes de una familia resiliente y unida encabezan El castillo de cristal, una extraordinaria historia de amor incondicional.",
+        "_link": "https://www.starz.com/ar/movies/el-castillo-de-cristal-62676",
+        "_director": "Destin Daniel Cretton"
+    },
+    {
+        "_id": {
+            "$oid": "61fa447215e6ee3dde63989d"
+        },
+        "_titulo": "La Guardería de Papá",
+        "_anio": 2003,
+        "_sinopsis": "Cuando los ejecutivos publicitarios Charlie y Phil pierden su trabajo intentando vender un cereal de desayuno con sabor a verduras, se convierten en",
+        "_link": "https://www.starz.com/ar/movies/la-guardería-de-papá-49407",
+        "_director": "Steve Carr"
+    },
+    {
+        "_id": {
+            "$oid": "61fa447515e6ee3dde63989e"
+        },
+        "_titulo": "Navidad empaquetada",
+        "_anio": 2014,
+        "_sinopsis": "Candace Cameron Bure protagoniza Navidad empaquetada, como la doctora Lauren Burnell que acepta una posición en Alaska después de perder a su novio y",
+        "_link": "https://www.starz.com/ar/movies/navidad-empaquetada-63106",
+        "_director": "Peter Sullivan"
+    },
+    {
+        "_id": {
+            "$oid": "61fa447915e6ee3dde63989f"
+        },
+        "_titulo": "La La Land: Una historia de amor",
+        "_anio": 2016,
+        "_sinopsis": "Emma Stone y Ryan Gosling la protagonizan como Mia y Sebastian, una actriz y un músico de jazz que buscan alcanzar sus sueños en Hollywood y se",
+        "_link": "https://www.starz.com/ar/movies/la-la-land-una-historia-de-amor-62069",
+        "_director": "Damien Chazelle"
+    },
+    {
+        "_id": {
+            "$oid": "61fa447d15e6ee3dde6398a0"
+        },
+        "_titulo": "Una Navidad a la medida",
+        "_anio": 2018,
+        "_sinopsis": "Este año Steven acogerá a su familia durante la Navidad, por lo que contrata a una organizadora de eventos para que le ayude a planear su fiesta",
+        "_link": "https://www.starz.com/ar/movies/una-navidad-a-la-medida-63545",
+        "_director": "Sam Irvin"
+    },
+    {
+        "_id": {
+            "$oid": "61fa448115e6ee3dde6398a1"
+        },
+        "_titulo": "El sabotaje",
+        "_anio": 2014,
+        "_sinopsis": "Un equipo de élite de la agencia antidroga norteamericana (DEA) aprovecha una operación contra un cártel para apoderarse de un botín de varios",
+        "_link": "https://www.starz.com/ar/movies/el-sabotaje-63675",
+        "_director": "David Ayer"
+    },
+    {
+        "_id": {
+            "$oid": "61fa448415e6ee3dde6398a2"
+        },
+        "_titulo": "Baile caliente",
+        "_anio": 1987,
+        "_sinopsis": "En 1963, Baby, de 17 años está de vacaciones con su familia en un centro turístico de la montaña cuando se siente atraída a los cuarteles del",
+        "_link": "https://www.starz.com/ar/movies/baile-caliente-43805",
+        "_director": "Emile Ardolino"
+    },
+    {
+        "_id": {
+            "$oid": "61fa448715e6ee3dde6398a3"
+        },
+        "_titulo": "John Wick 2: Un nuevo día para matar",
+        "_anio": 2017,
+        "_sinopsis": "En esta secuela del éxito de 2014, el legendario asesino John Wick (Keanu Reeves) se ve obligado a salir del retiro por un ex-asociado que planea",
+        "_link": "https://www.starz.com/ar/movies/john-wick-2-un-nuevo-día-para-matar-61327",
+        "_director": "Chad Stahelski"
+    },
+    {
+        "_id": {
+            "$oid": "61fa448a15e6ee3dde6398a4"
+        },
+        "_titulo": "Casi Navidad",
+        "_anio": 2016,
+        "_sinopsis": "Una familia disfuncional se reúne para su primera Navidad desde que falleció su mamá.",
+        "_link": "https://www.starz.com/ar/movies/casi-navidad-65820",
+        "_director": "David E. Talbert"
+    },
+    {
+        "_id": {
+            "$oid": "61fa448e15e6ee3dde6398a5"
+        },
+        "_titulo": "Los juegos del hambre: Sinsajo - Parte 1",
+        "_anio": 2014,
+        "_sinopsis": "El fenómeno mundial continúa. Katniss (Jennifer Lawrence) sobrevivió y destruyó los Juegos del Hambre, y ahora se levanta con el Distrito 13 para",
+        "_link": "https://www.starz.com/ar/movies/los-juegos-del-hambre-sinsajo-parte-1-50738",
+        "_director": "Francis Lawrence"
+    },
+    {
+        "_id": {
+            "$oid": "61fa449115e6ee3dde6398a6"
+        },
+        "_titulo": "Elizabeth: La edad de oro",
+        "_anio": 2007,
+        "_sinopsis": "Cate Blanchett y Geoffrey Rush protagonizan esta emocionante historia de la lucha de una mujer para controlar el amor, aplastar a sus enemigos y",
+        "_link": "https://www.starz.com/ar/movies/elizabeth-la-edad-de-oro-65816",
+        "_director": "Shekhar Kapur"
+    },
+    {
+        "_id": {
+            "$oid": "61fa449515e6ee3dde6398a7"
+        },
+        "_titulo": "Tropa de élite",
+        "_anio": 2007,
+        "_sinopsis": "Antes de la llegada del Papa a Rio de Janeiro, el Capitán Nascimento de la fuerza BOPE quiere salir de la corporación para dedicarse a enseñar en la",
+        "_link": "https://www.starz.com/ar/movies/tropa-de-élite-51922",
+        "_director": "José Padilha"
+    },
+    {
+        "_id": {
+            "$oid": "61fa449815e6ee3dde6398a8"
+        },
+        "_titulo": "Crímenes de lujuria",
+        "_anio": 2011,
+        "_sinopsis": "Rebeca y Arturo encuentran pasión el uno en el otro - y quizá hasta el amor. Pero sobre todo, tienen una oportunidad: Rebeca quiere asesinar a su",
+        "_link": "https://www.starz.com/ar/movies/crímenes-de-lujuria-60735",
+        "_director": "Walter Doehner"
+    },
+    {
+        "_id": {
+            "$oid": "61fa449c15e6ee3dde6398a9"
+        },
+        "_titulo": "Siniestro",
+        "_anio": 2012,
+        "_sinopsis": "Un autor se muda con su familia a una casa con un pasado oscuro con la esperanza de encontrar inspiración. Sin embargo, después de descubrir un",
+        "_link": "https://www.starz.com/ar/movies/siniestro-51847",
+        "_director": "Scott Derrickson"
+    },
+    {
+        "_id": {
+            "$oid": "61fa449f15e6ee3dde6398aa"
+        },
+        "_titulo": "Cuenta regresiva",
+        "_anio": 2009,
+        "_sinopsis": "Un maestro abre una cápsula del tiempo que ha sido desenterrada en la escuela primaria de su hijo, en ella hay algunas predicciones escalofriantes,",
+        "_link": "https://www.starz.com/ar/movies/cuenta-regresiva-49386",
+        "_director": "Alex Proyas"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44a215e6ee3dde6398ab"
+        },
+        "_titulo": "Crepúsculo la saga: Luna Nueva",
+        "_anio": 2009,
+        "_sinopsis": "A Bella se le parte el corazón cuando la familia Cullen decide mudarse para poner fin a su relación con el vampiro Edward. Ella busca consuelo en su",
+        "_link": "https://www.starz.com/ar/movies/crepúsculo-la-saga-luna-nueva-50238",
+        "_director": "Chris Weitz"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44a515e6ee3dde6398ac"
+        },
+        "_titulo": "Una esposa de mentira",
+        "_anio": 2011,
+        "_sinopsis": "Un hombre recurre a una mujer y a sus hijos para conquistar a la mujer de sus sueños.",
+        "_link": "https://www.starz.com/ar/movies/una-esposa-de-mentira-44132",
+        "_director": "Dennis Dugan"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44a915e6ee3dde6398ad"
+        },
+        "_titulo": "Open Water",
+        "_anio": 2003,
+        "_sinopsis": "Dan y Susan están extáticos de estar finalmente en sus tan anticipadas vacaciones tropicales en el Caribe. Sin embargo, después de un error cometido",
+        "_link": "https://www.starz.com/ar/movies/open-water-41557",
+        "_director": "Chris Kentis"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44ad15e6ee3dde6398ae"
+        },
+        "_titulo": "De Tyler Perry: ¿Por qué me casé también?",
+        "_anio": 2010,
+        "_sinopsis": "Con el mismo elenco carismático de la exitosa comedia dramática, \"¿Por qué me casé?\", Tyler Perry nos trae el siguiente capítulo en la vida de ocho",
+        "_link": "https://www.starz.com/ar/movies/de-tyler-perry-por-qué-me-casé-también-50512",
+        "_director": "Tyler Perry"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44b115e6ee3dde6398af"
+        },
+        "_titulo": "Brothers",
+        "_anio": 2009,
+        "_sinopsis": "Un joven debe reconfortar a la esposa e hijos de su hermano, quien ha desaparecido en Afganistán.",
+        "_link": "https://www.starz.com/ar/movies/brothers-49849",
+        "_director": "Jim Sheridan"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44b415e6ee3dde6398b0"
+        },
+        "_titulo": "Red 2",
+        "_anio": 2013,
+        "_sinopsis": "El ex agente de la CIA Frank Moses y su equipo de desafortunados héroes regresan para otra misión arriesgada, esta vez con la tarea de encontrar un",
+        "_link": "https://www.starz.com/ar/movies/red-2-50631",
+        "_director": "Dean Parisot"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44b815e6ee3dde6398b1"
+        },
+        "_titulo": "Posdata, te amo",
+        "_anio": 2007,
+        "_sinopsis": "Una viuda (Hilary Swank) apenada encuentra una serie de mensajes que le dejó su marido fallecido para ayudarle a disminuir su dolor y alentarla a",
+        "_link": "https://www.starz.com/ar/movies/posdata-te-amo-63543",
+        "_director": "Richard LaGravenese"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44bc15e6ee3dde6398b2"
+        },
+        "_titulo": "Sin escalas",
+        "_anio": 2014,
+        "_sinopsis": "Un Comisario aéreo usa su astucia con un terrorista americano amargado que amenaza con matar a un pasajero cada 20 minutos a menos que el Comisario",
+        "_link": "https://www.starz.com/ar/movies/sin-escalas-51823",
+        "_director": "Jaume Collet-Serra"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44c015e6ee3dde6398b3"
+        },
+        "_titulo": "De Tyler Perry: ¿Por qué nos casamos?",
+        "_anio": 2007,
+        "_sinopsis": "Un grupo de amigos universitarios casados ​​van a Colorado para su reunión anual de una semana. Superficialmente, parece que será como todas las",
+        "_link": "https://www.starz.com/ar/movies/de-tyler-perry-por-qué-nos-casamos-50107",
+        "_director": "Tyler Perry"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44c315e6ee3dde6398b4"
+        },
+        "_titulo": "La maldición de Blackwood",
+        "_anio": 2018,
+        "_sinopsis": "Cinco adolescentes emocionalmente frágiles son enviadas a Blackwood, una misteriosa escuela para niñas superdotadas y perturbadas.",
+        "_link": "https://www.starz.com/ar/movies/la-maldición-de-blackwood-62692",
+        "_director": "Rodrigo Cortés"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44c615e6ee3dde6398b5"
+        },
+        "_titulo": "Ladrones",
+        "_anio": 2015,
+        "_sinopsis": "El legendario ladrón Alejandro Toledo regresa a sus raíces con un nuevo socio para reclamar tierras robadas a una comunidad humilde por una",
+        "_link": "https://www.starz.com/ar/movies/ladrones-60725",
+        "_director": "Joe Menendez"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44ca15e6ee3dde6398b6"
+        },
+        "_titulo": "El legado",
+        "_anio": 2018,
+        "_sinopsis": "Un exconvicto recientemente liberado y su hermano menor, adoptivo, se ven obligados a huir. Al ser perseguidos por un criminal vengativo, los",
+        "_link": "https://www.starz.com/ar/movies/el-legado-62756",
+        "_director": "Jonathan Baker"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44ce15e6ee3dde6398b7"
+        },
+        "_titulo": "Dune",
+        "_anio": 1984,
+        "_sinopsis": "Ésta es la saga del guerrero Intergaláctico Paul Atreides y su ascenso mesiánico para conducir a su pueblo en su lucha por la supervivencia.",
+        "_link": "https://www.starz.com/ar/movies/dune-6612",
+        "_director": "David Lynch"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44d115e6ee3dde6398b8"
+        },
+        "_titulo": "Oscura seducción",
+        "_anio": 2011,
+        "_sinopsis": "Una cirujana plástica exitosa se embarca en una aventura apasionada con un enfermero, solo para descubrir el lado oscuro de su personalidad que",
+        "_link": "https://www.starz.com/ar/movies/oscura-seducción-60743",
+        "_director": "Walter Doehner"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44d515e6ee3dde6398b9"
+        },
+        "_titulo": "El grito 3",
+        "_anio": 2009,
+        "_sinopsis": "Un doctor (Shawnee Smith) necesita la ayuda de una misteriosa mujer japonesa para combatir a dos fantasmas vengativos.",
+        "_link": "https://www.starz.com/ar/movies/el-grito-3-51492",
+        "_director": "Toby Wilkins"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44d815e6ee3dde6398ba"
+        },
+        "_titulo": "Power Rangers",
+        "_anio": 2017,
+        "_sinopsis": "Saban’s Power Rangers cuenta la historia de cinco adolescentes de lo más ordinario que deben convertirse en algo extraordinario al enterarse que su",
+        "_link": "https://www.starz.com/ar/movies/power-rangers-61798",
+        "_director": "Dean Israelite"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44dc15e6ee3dde6398bb"
+        },
+        "_titulo": "Un Santa No Tan Santo",
+        "_anio": 2003,
+        "_sinopsis": "Willie, un Santa acabado y bromista de un centro comercial que sólo trabaja por las oportunidades criminales. Este año, Santa y su elfo ven su asalto",
+        "_link": "https://www.starz.com/ar/movies/un-santa-no-tan-santo-49311",
+        "_director": "Terry Zwigoff"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44df15e6ee3dde6398bc"
+        },
+        "_titulo": "12 Horas",
+        "_anio": 2012,
+        "_sinopsis": "Hace un año, Jill Parrish sobrevivió al secuestro de un asesino en serie. Cuando llega a casa luego de un turno nocturno descubre que su hermana",
+        "_link": "https://www.starz.com/ar/movies/12-horas-51692",
+        "_director": "Heitor Dhalia"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44e315e6ee3dde6398bd"
+        },
+        "_titulo": "Jigsaw: El juego continúa",
+        "_anio": 2017,
+        "_sinopsis": "Cadáveres se han estado apareciendo por toda la ciudad. Conforme la investigación avanza, las evidencias indican hacia un hombre: John Kramer. Pero",
+        "_link": "https://www.starz.com/ar/movies/jigsaw-el-juego-continúa-62688",
+        "_director": "Michael Spierig"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44e615e6ee3dde6398be"
+        },
+        "_titulo": "El Príncipe y yo",
+        "_anio": 2004,
+        "_sinopsis": "Paige es una estudiante de medicina brillante de un pueblo rural con grandes planes para su futuro. Sin embargo, estos planes quedan en un segundo",
+        "_link": "https://www.starz.com/ar/movies/el-príncipe-y-yo-52089",
+        "_director": "Martha Coolidge"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44e915e6ee3dde6398bf"
+        },
+        "_titulo": "Noche de brujas",
+        "_anio": 1978,
+        "_sinopsis": "En Halloween, Michael Myers aterroriza a una adolescente y sus amigos.",
+        "_link": "https://www.starz.com/ar/movies/noche-de-brujas-46437",
+        "_director": "John Carpenter"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44ec15e6ee3dde6398c0"
+        },
+        "_titulo": "Capitán Phillips",
+        "_anio": 2013,
+        "_sinopsis": "El capitán Richard Phillips intenta escapar de piratas armados somalíes mientras que la Marina de los Estados Unidos trata de rescatarlo.",
+        "_link": "https://www.starz.com/ar/movies/capitán-phillips-47783",
+        "_director": "Paul Greengrass"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44f015e6ee3dde6398c1"
+        },
+        "_titulo": "El duende 2",
+        "_anio": 1994,
+        "_sinopsis": "Hace mil años, un duende malvado se frustra al intentar atrapar a una joven novia. Ahora, en 1994 en Los Ángeles, el duende está decidido a tomar a",
+        "_link": "https://www.starz.com/ar/movies/el-duende-2-25250",
+        "_director": "Rodman Flender"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44f315e6ee3dde6398c2"
+        },
+        "_titulo": "Horizonte profundo",
+        "_anio": 2016,
+        "_sinopsis": "Horizonte profundo es una historia llena de heroísmo y acción, basada en los hechos reales que sucedieron en la plataforma de Deepwater Horizon en el",
+        "_link": "https://www.starz.com/ar/movies/horizonte-profundo-62067",
+        "_director": "Peter Berg"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44f715e6ee3dde6398c3"
+        },
+        "_titulo": "El sorprendente Hombre-Araña 2 - La amenaza de Electro",
+        "_anio": 2014,
+        "_sinopsis": "Ser el Hombre Araña (Andrew Garfield) es genial. Para Peter Parker, no hay mejor sensación que columpiarse entre rascacielos, ser el héroe y pasar el",
+        "_link": "https://www.starz.com/ar/movies/el-sorprendente-hombre-araña-2-la-amenaza-de-electro-50064",
+        "_director": "Marc Webb"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44fa15e6ee3dde6398c4"
+        },
+        "_titulo": "Rudo y Cursi : La vida es un volado",
+        "_anio": 2008,
+        "_sinopsis": "Los hermanos Beto (Diego Luna) y Tato (Gael García Bernal) Verdusco trabajan en un rancho platanero y juegan futbol en el equipo de su pueblo.",
+        "_link": "https://www.starz.com/ar/movies/rudo-y-cursi-la-vida-es-un-volado-50225",
+        "_director": "Carlos Cuaron"
+    },
+    {
+        "_id": {
+            "$oid": "61fa44fe15e6ee3dde6398c5"
+        },
+        "_titulo": "Crímenes ocultos",
+        "_anio": 2015,
+        "_sinopsis": "Un agente soviético caído en desgracia descubre una conexión entre una serie de asesinatos infantiles y el líder de un partido. Those who seek the",
+        "_link": "https://www.starz.com/ar/movies/crímenes-ocultos-59236",
+        "_director": "Daniel Espinosa"
+    },
+    {
+        "_id": {
+            "$oid": "61fa450115e6ee3dde6398c6"
+        },
+        "_titulo": "La enfermera",
+        "_anio": 2014,
+        "_sinopsis": "Durante el día, la enfermera Abby Russell se ocupa con cariño de los pacientes de All Saints Memorial Hospital; durante la noche, merodea por los",
+        "_link": "https://www.starz.com/ar/movies/la-enfermera-28990",
+        "_director": "Douglas Aarniokoski"
+    },
+    {
+        "_id": {
+            "$oid": "61fa450515e6ee3dde6398c7"
+        },
+        "_titulo": "Lugares oscuros",
+        "_anio": 2015,
+        "_sinopsis": "Charlize Theron, Nicholas Hoult, Cholë Grace Moretz y Christina Hendricks protagonizan este thriller de misterio, basado en la novela de Gillian",
+        "_link": "https://www.starz.com/ar/movies/lugares-oscuros-52235",
+        "_director": "Gilles Paquet-Brenner"
+    },
+    {
+        "_id": {
+            "$oid": "61fa450815e6ee3dde6398c8"
+        },
+        "_titulo": "Hellraiser: Juicio",
+        "_anio": 2018,
+        "_sinopsis": "Tres detectives intentan resolver un asesinato diabólico que los arrastra a las profundidades del infierno en esta próxima edición de la clásica",
+        "_link": "https://www.starz.com/ar/movies/hellraiser-juicio-62668",
+        "_director": "Gary Tunnicliffe"
+    },
+    {
+        "_id": {
+            "$oid": "61fa450c15e6ee3dde6398c9"
+        },
+        "_titulo": "No Hay Nada Como las Fiestas",
+        "_anio": 2008,
+        "_sinopsis": "Los distantes miembros de la familia Rodriguez se unen en la casa de sus padres para enfrentar lo que podría ser su última Navidad juntos en esta",
+        "_link": "https://www.starz.com/ar/movies/no-hay-nada-como-las-fiestas-31681",
+        "_director": "Alfredo De Villa"
+    },
+    {
+        "_id": {
+            "$oid": "61fa450f15e6ee3dde6398ca"
+        },
+        "_titulo": "Apariciones",
+        "_anio": 2005,
+        "_sinopsis": "Extraños y aterradores sucesos rodean a una familia (Donald Sutherland, Sissy Spacek, Rachel Hurd-Wood) en el estado de Tennessee de 1817 luego de",
+        "_link": "https://www.starz.com/ar/movies/apariciones-36016",
+        "_director": "Courtney Solomon"
+    },
+    {
+        "_id": {
+            "$oid": "61fa451315e6ee3dde6398cb"
+        },
+        "_titulo": "Caracortada",
+        "_anio": 1983,
+        "_sinopsis": "Cuando Fidel Castro abrió la frontera para que los cubanos que tuviesen familia en Miami pudieran salir, 125 mil personas salieron de Cuba con sueños",
+        "_link": "https://www.starz.com/ar/movies/caracortada-45072",
+        "_director": "Brian De Palma"
+    },
+    {
+        "_id": {
+            "$oid": "61fa451615e6ee3dde6398cc"
+        },
+        "_titulo": "RED: Retirados Extremadamente Duros",
+        "_anio": 2010,
+        "_sinopsis": "Cuando un agente retirado de la CIA es el objetivo de un asesino mortal, llama a sus viejos amigos del trabajo en un intento de conocer la verdad",
+        "_link": "https://www.starz.com/ar/movies/red-retirados-extremadamente-duros-50355",
+        "_director": "Robert Schwentke"
+    },
+    {
+        "_id": {
+            "$oid": "61fa451a15e6ee3dde6398cd"
+        },
+        "_titulo": "Divergente la serie: Insurgente",
+        "_anio": 2015,
+        "_sinopsis": "Los fugitivos Tris y Four buscan aliados y respuestas entre las ruinas de Chicago mientras tratan de evadir desesperadamente a Jeanine, líder de los",
+        "_link": "https://www.starz.com/ar/movies/divergente-la-serie-insurgente-51081",
+        "_director": "Robert Schwentke"
+    },
+    {
+        "_id": {
+            "$oid": "61fa451e15e6ee3dde6398ce"
+        },
+        "_titulo": "De Tyler Perry: Las niñas de papá",
+        "_anio": 2007,
+        "_sinopsis": "Una historia opuesta a la de Cenicienta, en la que una exitosa abogada (Union) se enamora de un mecánico (Elba) con problemas financieros y padre",
+        "_link": "https://www.starz.com/ar/movies/de-tyler-perry-las-niñas-de-papá-39528",
+        "_director": "Tyler Perry"
+    },
+    {
+        "_id": {
+            "$oid": "61fa452115e6ee3dde6398cf"
+        },
+        "_titulo": "¡Bu! 2 Una noche de brujas de Madea, de Tyler Perry",
+        "_anio": 2017,
+        "_sinopsis": "Cuando la hija de Brian, (Tyler Perry) se escapa a una fiesta, en un campamento embrujado, Madea, Bam Hattie y Joe comienzan toda una travesía llena",
+        "_link": "https://www.starz.com/ar/movies/bu-2-una-noche-de-brujas-de-madea-de-tyler-perry-51713",
+        "_director": "Tyler Perry"
+    },
+    {
+        "_id": {
+            "$oid": "61fa452515e6ee3dde6398d0"
+        },
+        "_titulo": "Pandillas de Nueva York",
+        "_anio": 2002,
+        "_sinopsis": "Tras años de encarcelamiento, el joven inmigrante irlandés Amsterdam Vallon (Leonardo DiCaprio) regresa, buscando venganza contra el líder de la",
+        "_link": "https://www.starz.com/ar/movies/pandillas-de-nueva-york-29581",
+        "_director": "Martin Scorsese"
+    },
+    {
+        "_id": {
+            "$oid": "61fa452815e6ee3dde6398d1"
+        },
+        "_titulo": "Dredd",
+        "_anio": 2012,
+        "_sinopsis": "Una prostituta convertida en narcotraficante pretende apoderarse de la futurista ciudad de Mega City One. El juez Dredd, el principal miembro de una",
+        "_link": "https://www.starz.com/ar/movies/dredd-50713",
+        "_director": "Pete Travis"
+    },
+    {
+        "_id": {
+            "$oid": "61fa452c15e6ee3dde6398d2"
+        },
+        "_titulo": "La maldición de la casa Winchester",
+        "_anio": 2018,
+        "_sinopsis": "El bebé y el marido (William Wirt Winchester) de Sarah Winchester, heredera de la compañía de rifles Winchester, mueren repentinamente. Debido a",
+        "_link": "https://www.starz.com/ar/movies/la-maldición-de-la-casa-winchester-62694",
+        "_director": "Michael Spierig"
+    },
+    {
+        "_id": {
+            "$oid": "61fa453015e6ee3dde6398d3"
+        },
+        "_titulo": "Dura verdad",
+        "_anio": 2012,
+        "_sinopsis": "Durante su viaje en velero por España, una familia entera es secuestrada. Ahora, un joven de Wall Street debe enfrentar a las personas responsables:",
+        "_link": "https://www.starz.com/ar/movies/dura-verdad-50508",
+        "_director": "Mabrouk El Mechri"
+    },
+    {
+        "_id": {
+            "$oid": "61fa453315e6ee3dde6398d4"
+        },
+        "_titulo": "Las ventajas de ser invisible",
+        "_anio": 2012,
+        "_sinopsis": "Drama protagonizado por Emma Watson y Ezra Miller, basado en la novela de Stephen Chbosky. Charlie siempre ha sido un introvertido, pero es forzado a",
+        "_link": "https://www.starz.com/ar/movies/las-ventajas-de-ser-invisible-51827",
+        "_director": "Stephen Chbosky"
+    },
+    {
+        "_id": {
+            "$oid": "61fa453615e6ee3dde6398d5"
+        },
+        "_titulo": "Llámame Por Tu Nombre",
+        "_anio": 2017,
+        "_sinopsis": "A mediados del esplendoroso verano de 1980 en Italia, Elio y Oliver descubren el maravilloso despertar del deseo que cambiara sus vidas por siempre.",
+        "_link": "https://www.starz.com/ar/movies/llámame-por-tu-nombre-38894",
+        "_director": "Luca Guadagnino"
+    },
+    {
+        "_id": {
+            "$oid": "61fa453915e6ee3dde6398d6"
+        },
+        "_titulo": "Whiplash: Música y obsesión",
+        "_anio": 2014,
+        "_sinopsis": "El objetivo de Andrew Neiman, un joven y ambicioso baterista de jazz, es triunfar en el elitista Conservatorio de Música de la Costa Este en el que",
+        "_link": "https://www.starz.com/ar/movies/whiplash-música-y-obsesión-23791",
+        "_director": "Damien Chazelle"
+    },
+    {
+        "_id": {
+            "$oid": "61fa453d15e6ee3dde6398d7"
+        },
+        "_titulo": "Halloween II",
+        "_anio": 1981,
+        "_sinopsis": "El desquiciado asesino Michael Myers regresa, y está mucho más decidido a asesinar a Laurie Strode. Mientras tanto, ella intenta descubrir la verdad",
+        "_link": "https://www.starz.com/ar/movies/halloween-ii-29934",
+        "_director": "Rick Rosenthal"
+    },
+    {
+        "_id": {
+            "$oid": "61fa454015e6ee3dde6398d8"
+        },
+        "_titulo": "Halloween 4: el regreso de Michael Myers",
+        "_anio": 1988,
+        "_sinopsis": "Hace diez años, cambió la manera de vivir el día de brujas.  Esta noche...¡él está de vuelta!",
+        "_link": "https://www.starz.com/ar/movies/halloween-4-el-regreso-de-michael-myers-52072",
+        "_director": "Dwight H. Little"
+    },
+    {
+        "_id": {
+            "$oid": "61fa454315e6ee3dde6398d9"
+        },
+        "_titulo": "American Pie: Tu primera vez",
+        "_anio": 1999,
+        "_sinopsis": "¡Jamás volverá a ver un pastel de manzana igual! \"American Pie\" es una visión histérica de la meta de cuatro amigos de secundaria \"desafortunados en",
+        "_link": "https://www.starz.com/ar/movies/american-pie-tu-primera-vez-48724",
+        "_director": "Paul Weitz"
+    },
+    {
+        "_id": {
+            "$oid": "61fa454615e6ee3dde6398da"
+        },
+        "_titulo": "Los juegos del hambre: Sinsajo - El final",
+        "_anio": 2015,
+        "_sinopsis": "Jennifer Lawrence interpreta a Katniss Everdeen, que comenzó su viaje luchando por sobrevivir a los despiadados Juegos del Hambre, y dirigió la",
+        "_link": "https://www.starz.com/ar/movies/los-juegos-del-hambre-sinsajo-el-final-50756",
+        "_director": "Francis Lawrence"
+    },
+    {
+        "_id": {
+            "$oid": "61fa454915e6ee3dde6398db"
+        },
+        "_titulo": "La redada",
+        "_anio": 2012,
+        "_sinopsis": "En el corazón de la poblada ciudad de Jakarta está el escondite de una pandilla de traficantes. Antes de amanecer un escuadrón de S.W.A.T llega para",
+        "_link": "https://www.starz.com/ar/movies/la-redada-34897",
+        "_director": "Gareth Evans"
+    },
+    {
+        "_id": {
+            "$oid": "61fa454d15e6ee3dde6398dc"
+        },
+        "_titulo": "Obsesión Del Pasado",
+        "_anio": 2009,
+        "_sinopsis": "Una ex novia amargada trama su venganza después de que su ex regresa a su ciudad natal con un nueva amante.",
+        "_link": "https://www.starz.com/ar/movies/obsesión-del-pasado-51729",
+        "_director": "Morgan J. Freeman"
+    },
+    {
+        "_id": {
+            "$oid": "61fa455015e6ee3dde6398dd"
+        },
+        "_titulo": "Laws Of Attraction",
+        "_anio": 2004,
+        "_sinopsis": "Dos exitosos abogados rivales de Nueva York se enamoran, a pesar de sostener una batalla en dos casos de divorcio.",
+        "_link": "https://www.starz.com/ar/movies/laws-of-attraction-49225",
+        "_director": "Peter Howitt"
+    },
+    {
+        "_id": {
+            "$oid": "61fa455315e6ee3dde6398de"
+        },
+        "_titulo": "Cartas a Julieta",
+        "_anio": 2010,
+        "_sinopsis": "Mientras está de vacaciones en Verona, Sophie se encuentra con una \"carta a Julieta\" y se embarca en una misión para encontrar a su autor.",
+        "_link": "https://www.starz.com/ar/movies/cartas-a-julieta-50199",
+        "_director": "Gary Winick"
+    },
+    {
+        "_id": {
+            "$oid": "61fa455715e6ee3dde6398df"
+        },
+        "_titulo": "El contratista",
+        "_anio": 2013,
+        "_sinopsis": "Elizabeth Chase es una esposa comprensiva y una madre amorosa. Su trabajo en uno de los principales hospitales infantiles de Los Ángeles la tiene",
+        "_link": "https://www.starz.com/ar/movies/el-contratista-60686",
+        "_director": "Sean Olson"
+    },
+    {
+        "_id": {
+            "$oid": "61fa455a15e6ee3dde6398e0"
+        },
+        "_titulo": "El último cazador de brujas",
+        "_anio": 2015,
+        "_sinopsis": "El último cazador de brujas es la única barrera entre la humanidad y las fuerzas combinadas de las más terribles brujas de la historia.",
+        "_link": "https://www.starz.com/ar/movies/el-último-cazador-de-brujas-59242",
+        "_director": "Breck Eisner"
+    },
+    {
+        "_id": {
+            "$oid": "61fa455e15e6ee3dde6398e1"
+        },
+        "_titulo": "Escándalo Americano",
+        "_anio": 2013,
+        "_sinopsis": "Thriller político ambientado en los años 70 sobre un agente del FBI que investiga un caso en el que algunos miembros del Congreso aparecen implicados",
+        "_link": "https://www.starz.com/ar/movies/escándalo-americano-50880",
+        "_director": "Stephen Greene"
+    },
+    {
+        "_id": {
+            "$oid": "61fa456115e6ee3dde6398e2"
+        },
+        "_titulo": "El libro de los secretos",
+        "_anio": 2010,
+        "_sinopsis": "Un héroe solitario tiene que buscarse la vida en las tierras baldías de la América post-apocalíptica para proteger un libro sagrado que contiene la",
+        "_link": "https://www.starz.com/ar/movies/el-libro-de-los-secretos-63744",
+        "_director": "Allen Hughes"
+    },
+    {
+        "_id": {
+            "$oid": "61fa456515e6ee3dde6398e3"
+        },
+        "_titulo": "Recuérdame",
+        "_anio": 2010,
+        "_sinopsis": "Una joven estudiante con problemas se enamora de una chica después de un encuentro casual. Ambos llegan aceptan sus tragedias personales que ayudan a",
+        "_link": "https://www.starz.com/ar/movies/recuérdame-51833",
+        "_director": "Allen Coulter"
+    },
+    {
+        "_id": {
+            "$oid": "61fa456815e6ee3dde6398e4"
+        },
+        "_titulo": "UNA BODA PARA NAVIDAD",
+        "_anio": 2018,
+        "_sinopsis": "Haley Foster escapó de su infancia en un pequeño pueblo en Pineridge y construyó una gran vida en la ciudad de Los Ángeles como una de las mejores",
+        "_link": "https://www.starz.com/ar/movies/una-boda-para-navidad-62684",
+        "_director": "Fred Olen Ray"
+    },
+    {
+        "_id": {
+            "$oid": "61fa456c15e6ee3dde6398e5"
+        },
+        "_titulo": "Malas Enseñanzas",
+        "_anio": 2011,
+        "_sinopsis": "Una malhablada maestra de séptimo grado, abandonada por su novio adinerado, empieza a perseguir a un colega, lo que causa conflictos con el modelo de",
+        "_link": "https://www.starz.com/ar/movies/malas-enseñanzas-45158",
+        "_director": "Jake Kasdan"
+    },
+    {
+        "_id": {
+            "$oid": "61fa456f15e6ee3dde6398e6"
+        },
+        "_titulo": "La reina",
+        "_anio": 2006,
+        "_sinopsis": "Hellen Mirren ganó el Oscar a Mejor Actriz en 2006 por su brillante retrato de la Reina Isabel cuando lidiaba con la trágica muerte de la Princesa",
+        "_link": "https://www.starz.com/ar/movies/la-reina-25264",
+        "_director": "Stephen Frears"
+    },
+    {
+        "_id": {
+            "$oid": "61fa457315e6ee3dde6398e7"
+        },
+        "_titulo": "Más fuerte que el destino",
+        "_anio": 2017,
+        "_sinopsis": "Más Fuerte que el Destino está inspirada en la historia de Jeff Bauman, un hombre ordinario quien capturó los corazones del mundo, para convertirse",
+        "_link": "https://www.starz.com/ar/movies/más-fuerte-que-el-destino-62674",
+        "_director": "David Gordon Green"
+    },
+    {
+        "_id": {
+            "$oid": "61fa457615e6ee3dde6398e8"
+        },
+        "_titulo": "Plan de escape",
+        "_anio": 2013,
+        "_sinopsis": "Ray Breslin, una de las principales autoridades del mundo en materia de seguridad estructural, acepta asumir un trabajo poco ortodoxo: salir de una",
+        "_link": "https://www.starz.com/ar/movies/plan-de-escape-50202",
+        "_director": "Mikael Hafstrom"
+    },
+    {
+        "_id": {
+            "$oid": "61fa457a15e6ee3dde6398e9"
+        },
+        "_titulo": "Cubos",
+        "_anio": 1997,
+        "_sinopsis": "Un grupo de seis completos extraños, de personalidades y orígenes muy variados, son puestos involuntariamente en un laberinto interminable que",
+        "_link": "https://www.starz.com/ar/movies/cubos-47298",
+        "_director": "Vincenzo Natali"
+    },
+    {
+        "_id": {
+            "$oid": "61fa457d15e6ee3dde6398ea"
+        },
+        "_titulo": "De Tyler Perry Tentación: Confesiones de una consejera matrimonial",
+        "_anio": 2013,
+        "_sinopsis": "Judith es una mujer trabajadora que está en un matrimonio amoroso pero sin pasión. Conoce a un hombre atractivo y extremadamente rico que la seduce",
+        "_link": "https://www.starz.com/ar/movies/de-tyler-perry-tentación-confesiones-de-una-consejera-matrimonial-51340",
+        "_director": "Tyler Perry"
+    },
+    {
+        "_id": {
+            "$oid": "61fa458115e6ee3dde6398eb"
+        },
+        "_titulo": "Traficantes por error",
+        "_anio": 2009,
+        "_sinopsis": "Donald Faison protagoniza como un repartidor desafortunado que se encuentra en el centro de un negocio de drogas que salió horriblemente mal en",
+        "_link": "https://www.starz.com/ar/movies/traficantes-por-error-39896",
+        "_director": "Benny Boom"
+    },
+    {
+        "_id": {
+            "$oid": "61fa458415e6ee3dde6398ec"
+        },
+        "_titulo": "El gringo",
+        "_anio": 2012,
+        "_sinopsis": "Un hombre es emboscado en una ciudad fronteriza mexicana llena de gángsters con una bolsa llena de dinero robado y debe encontrar la manera de",
+        "_link": "https://www.starz.com/ar/movies/el-gringo-51654",
+        "_director": "Eduardo Rodriguez"
+    },
+    {
+        "_id": {
+            "$oid": "61fa458815e6ee3dde6398ed"
+        },
+        "_titulo": "Maria Antonieta La Reina Adolescente",
+        "_anio": 2006,
+        "_sinopsis": "La historia de Marie-Antoinette, una ingenua austriaca de 14 años que se casó con Luís XVI sin estar preparada para los problemas políticos de ser la",
+        "_link": "https://www.starz.com/ar/movies/maria-antonieta-la-reina-adolescente-14139",
+        "_director": "Sofia Coppola"
+    },
+    {
+        "_id": {
+            "$oid": "61fa458b15e6ee3dde6398ee"
+        },
+        "_titulo": "Pánico en altamar",
+        "_anio": 2006,
+        "_sinopsis": "Un grupo de viejos amigos se encuentran para una reunión a bordo de un yate de lujo, pero el evento se convierte en una pesadilla cuando se lanzan al",
+        "_link": "https://www.starz.com/ar/movies/pánico-en-altamar-41569",
+        "_director": "Hans Horn"
+    },
+    {
+        "_id": {
+            "$oid": "61fa458f15e6ee3dde6398ef"
+        },
+        "_titulo": "El árbol de Navidad",
+        "_anio": 2014,
+        "_sinopsis": "Cuando la chica de la gran ciudad (Lacey Chabert) regresa para salvar la el vivero de árboles de su infancia, tal vez puede redescubrir más de lo que",
+        "_link": "https://www.starz.com/ar/movies/el-árbol-de-navidad-63451",
+        "_director": "David Winning"
+    },
+    {
+        "_id": {
+            "$oid": "61fa459315e6ee3dde6398f0"
+        },
+        "_titulo": "Golpe en londres",
+        "_anio": 2017,
+        "_sinopsis": "Un atraco a un banco sale mal y alguien es asesinado, pero las cosas pueden no ser lo que parecen.",
+        "_link": "https://www.starz.com/ar/movies/golpe-en-londres-62696",
+        "_director": "Mark McQueen"
+    },
+    {
+        "_id": {
+            "$oid": "61fa459615e6ee3dde6398f1"
+        },
+        "_titulo": "Un paso adelante",
+        "_anio": 2006,
+        "_sinopsis": "Tyler Gage (Channing Tatum) creció en las duras calles de Baltimore. Un roce con la ley obliga a Tyler a realizar  servicio comunitario en la Escuela",
+        "_link": "https://www.starz.com/ar/movies/un-paso-adelante-24244",
+        "_director": "Anne Fletcher"
+    },
+    {
+        "_id": {
+            "$oid": "61fa459a15e6ee3dde6398f2"
+        },
+        "_titulo": "47 Ronin",
+        "_anio": 2013,
+        "_sinopsis": "Después de que un traicionero caudillo mate a su señor y los destierre, 47 intrépidos samuráis juran vengarse y recobrar el honor de los suyos.",
+        "_link": "https://www.starz.com/ar/movies/47-ronin-52304",
+        "_director": "Carl Rinsch"
+    },
+    {
+        "_id": {
+            "$oid": "61fa459d15e6ee3dde6398f3"
+        },
+        "_titulo": "Los mensajeros",
+        "_anio": 2007,
+        "_sinopsis": "Una siniestra oscuridad invade una serena granja de girasoles en Dakota del Norte, y la familia Solomon está destrozada por la sospecha, el caos y el",
+        "_link": "https://www.starz.com/ar/movies/los-mensajeros-29666",
+        "_director": "Danny Pang"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45a115e6ee3dde6398f4"
+        },
+        "_titulo": "The Grudge 2",
+        "_anio": 2006,
+        "_sinopsis": "Una joven mujer (Amber Tamblyn) descubre una terrible maldición mientras busca a su hermana (Sarah Michelle Gellar) desaparecida en Tokio.",
+        "_link": "https://www.starz.com/ar/movies/the-grudge-2-29251",
+        "_director": "Takashi Shimizu"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45a515e6ee3dde6398f5"
+        },
+        "_titulo": "Al borde del abismo",
+        "_anio": 2012,
+        "_sinopsis": "Un ex policía, recientemente liberado de prisión, está parado en la cornisa de un edificio, amenazando con saltar. Mientras tanto, un enorme robo de",
+        "_link": "https://www.starz.com/ar/movies/al-borde-del-abismo-49297",
+        "_director": "Asger Leth"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45a815e6ee3dde6398f6"
+        },
+        "_titulo": "El lado oscuro del deseo",
+        "_anio": 2015,
+        "_sinopsis": "Evan es un hombre casado cuya mujer e hijos están de viaje. Una noche lluviosa acoge a dos chicas que, aunque al principio se muestre reacio, lo",
+        "_link": "https://www.starz.com/ar/movies/el-lado-oscuro-del-deseo-50862",
+        "_director": "Eli Roth"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45ab15e6ee3dde6398f7"
+        },
+        "_titulo": "Mamma Mia!",
+        "_anio": 2008,
+        "_sinopsis": "Donna, una madre independiente y soltera, dueña de un pequeño hotel en una idílica isla griega, está a punto de dejar que se marche Sophie, la hija a",
+        "_link": "https://www.starz.com/ar/movies/mamma-mia-50021",
+        "_director": "Phyllida Lloyd"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45ae15e6ee3dde6398f8"
+        },
+        "_titulo": "Anna Karenina",
+        "_anio": 2012,
+        "_sinopsis": "La historia explora con fuerza la capacidad de amar del corazón humano. Anna (Knightley) duda de su felicidad y de su matrimonio, y los cambios se",
+        "_link": "https://www.starz.com/ar/movies/anna-karenina-41102",
+        "_director": "Joe Wright"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45b215e6ee3dde6398f9"
+        },
+        "_titulo": "Si no despierto",
+        "_anio": 2017,
+        "_sinopsis": "Samantha Kingston (Zoey Deutch), una preparatoriana a punto de graduarse, que lo tiene todo. El 12 de Febrero es sólo otro venturoso día en la vida",
+        "_link": "https://www.starz.com/ar/movies/si-no-despierto-51601",
+        "_director": "Ry Russo-Young"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45b615e6ee3dde6398fa"
+        },
+        "_titulo": "Querido Santa Secreto",
+        "_anio": 2013,
+        "_sinopsis": "Tatyana Ali estelariza en esta película llena de estrellas, incluyendo a Jordin Sparks, Ernie Hudson y Della Reese. ¡Es un reconfortante romance",
+        "_link": "https://www.starz.com/ar/movies/querido-santa-secreto-63449",
+        "_director": "Peter Sullivan"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45ba15e6ee3dde6398fb"
+        },
+        "_titulo": "Mi nombre es Tsotsi",
+        "_anio": 2005,
+        "_sinopsis": "Un criminal convertido en asesino se da cuenta de que la mujer que asesinó dejó un bebé en el asiento trasero de su coche, y pronto se vuelve más",
+        "_link": "https://www.starz.com/ar/movies/mi-nombre-es-tsotsi-49793",
+        "_director": "Gavin Hood"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45bd15e6ee3dde6398fc"
+        },
+        "_titulo": "El grito",
+        "_anio": 2004,
+        "_sinopsis": "Karen es una enfermera estadounidense que vive en Tokio y está expuesta a una misteriosa maldición sobrenatural. La maldición es un espíritu",
+        "_link": "https://www.starz.com/ar/movies/el-grito-29285",
+        "_director": "Takashi Shimizu"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45c115e6ee3dde6398fd"
+        },
+        "_titulo": "Ouija: El origen del mal",
+        "_anio": 2016,
+        "_sinopsis": "En Ouija: El origen del mal, la secuela del éxito inesperado del 2014, un grupo de ilusos amigos debe confrontar sus más terribles miedos cuando",
+        "_link": "https://www.starz.com/ar/movies/ouija-el-origen-del-mal-65840",
+        "_director": "Mike Flanagan"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45c415e6ee3dde6398fe"
+        },
+        "_titulo": "Retornados",
+        "_anio": 2014,
+        "_sinopsis": "Un virus zombi ha infectado a la humanidad, pero se puede curar con inyecciones diarias. Así que el caos surge cuando se sabe que quedan pocos",
+        "_link": "https://www.starz.com/ar/movies/retornados-51836",
+        "_director": "Manuel Carballo"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45c815e6ee3dde6398ff"
+        },
+        "_titulo": "Make your move",
+        "_anio": 2014,
+        "_sinopsis": "Make your move trata de una joven bailarina coreana, Aya (BoA), que vive en Nueva York y dirige su grupo de baile femenino Cobu. Aya se enamora de",
+        "_link": "https://www.starz.com/ar/movies/make-your-move-63444",
+        "_director": "Duane Adler"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45cc15e6ee3dde639900"
+        },
+        "_titulo": "Una Navidad a la moda real",
+        "_anio": 2018,
+        "_sinopsis": "Kristin Cooper, la guapa y talentosa asistente de una firma global de relaciones públicas, es\npuesta a cargo del Desfile de Moda y Subasta Navideña",
+        "_link": "https://www.starz.com/ar/movies/una-navidad-a-la-moda-real-62682",
+        "_director": "Fred Olen Ray"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45d015e6ee3dde639901"
+        },
+        "_titulo": "La cabaña",
+        "_anio": 2017,
+        "_sinopsis": "A raíz de una tragedia personal, Mackenzie Allen Phillips recibe una nota misteriosa invitándolo a “La cabaña.” Mack acude y se ve envuelto en la",
+        "_link": "https://www.starz.com/ar/movies/la-cabaña-57174",
+        "_director": "Stuart Hazeldine"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45d315e6ee3dde639902"
+        },
+        "_titulo": "Crank: muerte anunciada",
+        "_anio": 2006,
+        "_sinopsis": "Hoy es el último día de la vida del asesino a sueldo Chev Chelios. Le suministraron un veneno que lo matará si permite que su corazón se estabilice a",
+        "_link": "https://www.starz.com/ar/movies/crank-muerte-anunciada-49809",
+        "_director": "Mark Neveldine"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45d715e6ee3dde639903"
+        },
+        "_titulo": "¡Competencia en la cocina!",
+        "_anio": 2017,
+        "_sinopsis": "Una madre soltera que sueña con una vida mejor y ama cocinar encuentra el camino al éxito cuando su hijo la insribe en una competencia de gastronomía.",
+        "_link": "https://www.starz.com/ar/movies/competencia-en-la-cocina-62670",
+        "_director": "Tomas Brickhill"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45da15e6ee3dde639904"
+        },
+        "_titulo": "El traidor",
+        "_anio": 2008,
+        "_sinopsis": "Cuando el honesto agente del FBI, Roy Clayton (Guy Pearce de MEMENTO) encabeza la investigación de una peligrosa conspiración internacional, todas",
+        "_link": "https://www.starz.com/ar/movies/el-traidor-30168",
+        "_director": "Jeffrey Nachmanoff"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45de15e6ee3dde639905"
+        },
+        "_titulo": "Escondida",
+        "_anio": 2011,
+        "_sinopsis": "Una detective de Boston investiga los cuerpos momificados de seis mujeres.",
+        "_link": "https://www.starz.com/ar/movies/escondida-51619",
+        "_director": "John Gray"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45e115e6ee3dde639906"
+        },
+        "_titulo": "Como si fuera la primera vez",
+        "_anio": 2004,
+        "_sinopsis": "Un veterinario intenta reiteradamente que una mujer que tiene problemas con su memoria se enamore nuevamente de él.",
+        "_link": "https://www.starz.com/ar/movies/como-si-fuera-la-primera-vez-48991",
+        "_director": "Peter Segal"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45e515e6ee3dde639907"
+        },
+        "_titulo": "Si Solo Pudiera Imaginar",
+        "_anio": 2018,
+        "_sinopsis": "Bart Millard es el líder de la banda cristiana MercyMe, que pierde a su padre por un cáncer. Este trágico suceso le inspira a escribir una canción",
+        "_link": "https://www.starz.com/ar/movies/si-solo-pudiera-imaginar-62700",
+        "_director": "The Erwin Brothers"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45e815e6ee3dde639908"
+        },
+        "_titulo": "El Karate Kid",
+        "_anio": 1984,
+        "_sinopsis": "Un adolescente aprende sobre la vida, la amistad y el coraje bajo la guía de un maestro de artes marciales.",
+        "_link": "https://www.starz.com/ar/movies/el-karate-kid-6462",
+        "_director": "John G. Avildsen"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45ec15e6ee3dde639909"
+        },
+        "_titulo": "La Cumbre Escarlata",
+        "_anio": 2015,
+        "_sinopsis": "Cuando un extraño seductor le roba el corazón, una joven mujer se deja llevar hasta una casa en la cima de una montaña de arcilla color rojo sangre,",
+        "_link": "https://www.starz.com/ar/movies/la-cumbre-escarlata-65822",
+        "_director": "Guillermo Del Toro"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45ef15e6ee3dde63990a"
+        },
+        "_titulo": "La princesa prometida",
+        "_anio": 1987,
+        "_sinopsis": "La historia es la clásica historia de amor y aventura como la bella Buttercup es secuestrada y retenida contra su voluntad en orden a casarse con el",
+        "_link": "https://www.starz.com/ar/movies/la-princesa-prometida-47013",
+        "_director": "Rob Reiner"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45f315e6ee3dde63990b"
+        },
+        "_titulo": "Venganza letal",
+        "_anio": 2010,
+        "_sinopsis": "Un expresidiario tiene un único deseo: vengar el asesinato de su hermano, cometido durante un robo a un banco.",
+        "_link": "https://www.starz.com/ar/movies/venganza-letal-63738",
+        "_director": "George Tillman Jr."
+    },
+    {
+        "_id": {
+            "$oid": "61fa45f715e6ee3dde63990c"
+        },
+        "_titulo": "Campamento del terror",
+        "_anio": 2015,
+        "_sinopsis": "Cuatro jóvenes estadounidenses se apuntan como monitores en un campamento de verano en Europa. Al llegar, una extraña infección, que causa furia",
+        "_link": "https://www.starz.com/ar/movies/campamento-del-terror-60727",
+        "_director": "Alberto Marini"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45fb15e6ee3dde63990d"
+        },
+        "_titulo": "Grey Lady",
+        "_anio": 2017,
+        "_sinopsis": "Después de que su compañera policía y amante, fuera asesinada en Boston, el detective de homicidios James Doyle (Eric Dane) sigue una pista puesta en",
+        "_link": "https://www.starz.com/ar/movies/grey-lady-51947",
+        "_director": "John Shea"
+    },
+    {
+        "_id": {
+            "$oid": "61fa45fe15e6ee3dde63990e"
+        },
+        "_titulo": "Rápido y fogoso",
+        "_anio": 2008,
+        "_sinopsis": "Un adolescente desesperado por perder su virginidad convence a sus amigos de ir en un viaje por carretera con él para conocer a una chica que conoció",
+        "_link": "https://www.starz.com/ar/movies/rápido-y-fogoso-44850",
+        "_director": "Sean Anders"
+    },
+    {
+        "_id": {
+            "$oid": "61fa460215e6ee3dde63990f"
+        },
+        "_titulo": "Una vida por delante",
+        "_anio": 2005,
+        "_sinopsis": "Un ranchero (Robert Redford) de Wyoming le da refugio a su sufrida nuera (Jennifer Lopez), cuyas heridas tardan un buen tiempo en sanar.",
+        "_link": "https://www.starz.com/ar/movies/una-vida-por-delante-49570",
+        "_director": "Lasse Hallstrom"
+    },
+    {
+        "_id": {
+            "$oid": "61fa460515e6ee3dde639910"
+        },
+        "_titulo": "Extraordinario",
+        "_anio": 2017,
+        "_sinopsis": "Tanto su familia como sus compañeros de clases y la comunidad en general luchan por encontrar la compasión y la aceptación, el extraordinario viaje",
+        "_link": "https://www.starz.com/ar/movies/extraordinario-62071",
+        "_director": "Stephen Chbosky"
+    },
+    {
+        "_id": {
+            "$oid": "61fa460915e6ee3dde639911"
+        },
+        "_titulo": "Los Perdedores Movie",
+        "_anio": 2012,
+        "_sinopsis": "Cuatro mejores amigos se embarcan en unas vacaciones inolvidables en el extranjero llenas de sol, alcohol y la promesa de una pasión salvaje y loca",
+        "_link": "https://www.starz.com/ar/movies/los-perdedores-movie-51811",
+        "_director": "Ben Palmer"
+    },
+    {
+        "_id": {
+            "$oid": "61fa460c15e6ee3dde639912"
+        },
+        "_titulo": "Decisión final",
+        "_anio": 2014,
+        "_sinopsis": "En el día del Draft de la NFL, el gerente general de los Cafés de Cleveland debe decidir que es lo que está dispuesto a sacrificar mientras busca al",
+        "_link": "https://www.starz.com/ar/movies/decisión-final-51070",
+        "_director": "Ivan Reitman"
+    },
+    {
+        "_id": {
+            "$oid": "61fa461015e6ee3dde639913"
+        },
+        "_titulo": "Spider-Man: De regreso a casa",
+        "_anio": 2017,
+        "_sinopsis": "Un joven Peter Parker/Hombre Araña comienza a navegar la nueva identidad encontrada como el superhéroe lanzador de la web.",
+        "_link": "https://www.starz.com/ar/movies/spider-man-de-regreso-a-casa-37147",
+        "_director": "Jon Watts"
+    },
+    {
+        "_id": {
+            "$oid": "61fa461415e6ee3dde639914"
+        },
+        "_titulo": "¿Conocen a Joe Black?",
+        "_anio": 1998,
+        "_sinopsis": "Bill es un amoroso padre y un honesto hombre de negocios que jamás ha pensado en la muerte hasta que una mañana, se le aparece para cumplir lo",
+        "_link": "https://www.starz.com/ar/movies/conocen-a-joe-black-30190",
+        "_director": "Martin Brest"
+    },
+    {
+        "_id": {
+            "$oid": "61fa461815e6ee3dde639915"
+        },
+        "_titulo": "Después Del Sexo",
+        "_anio": 2007,
+        "_sinopsis": "¿De qué hablamos cuando el sexo termina? Conoce a ocho parejas -heterosexuales y gays, vírgenes y extraños, amantes, mentirosos, engañadores y",
+        "_link": "https://www.starz.com/ar/movies/después-del-sexo-51896",
+        "_director": "Eric Amadio"
+    },
+    {
+        "_id": {
+            "$oid": "61fa461c15e6ee3dde639916"
+        },
+        "_titulo": "Son como niños 2",
+        "_anio": 2013,
+        "_sinopsis": "La secuela de Son como niños. Después de mudarse con su familia de regreso a su ciudad natal para estar con sus amigos y sus hijos, Lenny, descubre",
+        "_link": "https://www.starz.com/ar/movies/son-como-niños-2-50698",
+        "_director": "Dennis Dugan"
+    },
+    {
+        "_id": {
+            "$oid": "61fa461f15e6ee3dde639917"
+        },
+        "_titulo": "Empire State el gran robo del Bronx",
+        "_anio": 2013,
+        "_sinopsis": "Un guardia de seguridad es convencido por su imprudente mejor amigo de robar la compañía para la cual trabaja, junto a una violenta banda criminal y",
+        "_link": "https://www.starz.com/ar/movies/empire-state-el-gran-robo-del-bronx-30698",
+        "_director": "Dito Montiel"
+    },
+    {
+        "_id": {
+            "$oid": "61fa462215e6ee3dde639918"
+        },
+        "_titulo": "Best F(r)iends: Volume Two",
+        "_anio": 2018,
+        "_sinopsis": "Un vagabundo se hace amigo de un extravagante director de funeraria, y pronto, forman una sociedad, aunque una que poco tiene de comercial. La locura",
+        "_link": "https://www.starz.com/ar/movies/best-f-r-iends-volume-two-62686",
+        "_director": "Justin MacGregor"
+    },
+    {
+        "_id": {
+            "$oid": "61fa462715e6ee3dde639919"
+        },
+        "_titulo": "Rendirse jamás",
+        "_anio": 2008,
+        "_sinopsis": "Un adolescente rebelde ingresa a una nueva escuela, donde se ve envuelto en la escena de la lucha clandestina. Ayudado por un especialista en artes",
+        "_link": "https://www.starz.com/ar/movies/rendirse-jamás-30857",
+        "_director": "Jeff Wadlow"
+    },
+    {
+        "_id": {
+            "$oid": "61fa462a15e6ee3dde63991a"
+        },
+        "_titulo": "Lo imposible",
+        "_anio": 2012,
+        "_sinopsis": "Esta película aclamada por la por Naomi Watts y Ewan McGregor está basada en la verdadera historia de una familia atrapada en una de las peores",
+        "_link": "https://www.starz.com/ar/movies/lo-imposible-51754",
+        "_director": "J.A. Bayona"
+    },
+    {
+        "_id": {
+            "$oid": "61fa462e15e6ee3dde63991b"
+        },
+        "_titulo": "Crepúsculo, la saga: Eclipse",
+        "_anio": 2010,
+        "_sinopsis": "Mientras una serie de misteriosos asesinatos se apodera de Seattle, Bella, cuya graduación de secundaria se acerca rápidamente, se ve obligada a",
+        "_link": "https://www.starz.com/ar/movies/crepúsculo-la-saga-eclipse-50241",
+        "_director": "David Slade"
+    },
+    {
+        "_id": {
+            "$oid": "61fa463115e6ee3dde63991c"
+        },
+        "_titulo": "Día del atentado",
+        "_anio": 2016,
+        "_sinopsis": "La historia del bombardeo de la maratón de Boston del 2013 y la búsqueda de personas en la ciudad para encontrar a los terroristas responsables.",
+        "_link": "https://www.starz.com/ar/movies/día-del-atentado-62672",
+        "_director": "Peter Berg"
+    },
+    {
+        "_id": {
+            "$oid": "61fa463415e6ee3dde63991d"
+        },
+        "_titulo": "Rapture-Palooza",
+        "_anio": 2013,
+        "_sinopsis": "Después de que el apocalipsis sucede, Lindsey y su novio Ben están entre los que quedaron en la tierra. Las cosas toman un giro aún peor cuando el",
+        "_link": "https://www.starz.com/ar/movies/rapture-palooza-42964",
+        "_director": "Paul Middleditch"
+    },
+    {
+        "_id": {
+            "$oid": "61fa463815e6ee3dde63991e"
+        },
+        "_titulo": "Crepúsculo",
+        "_anio": 2008,
+        "_sinopsis": "Una adolescente con problemas se muda con su padre a un pequeño pueblo aislado. Ella se enamora de un misterioso solitario con un secreto impactante,",
+        "_link": "https://www.starz.com/ar/movies/crepúsculo-49947",
+        "_director": "Catherine Hardwicke"
+    },
+    {
+        "_id": {
+            "$oid": "61fa463b15e6ee3dde63991f"
+        },
+        "_titulo": "Se Dice De Mi",
+        "_anio": 2010,
+        "_sinopsis": "Cuando se descubre su mentirita blanca de que perdió la virginidad, una chica simple de la secundaria (Emma Stone) ve un paralelo con su vida en \"La",
+        "_link": "https://www.starz.com/ar/movies/se-dice-de-mi-39601",
+        "_director": "Will Gluck"
+    },
+    {
+        "_id": {
+            "$oid": "61fa463f15e6ee3dde639920"
+        },
+        "_titulo": "Educación básica",
+        "_anio": 2008,
+        "_sinopsis": "Bienvenidos a la escuela primaria Geraldine Ferraro, donde los maestros están borrachos, son perezosos o psicóticos, todos los niños están",
+        "_link": "https://www.starz.com/ar/movies/educación-básica-50122",
+        "_director": "Mark Lafferty"
+    },
+    {
+        "_id": {
+            "$oid": "61fa464315e6ee3dde639921"
+        },
+        "_titulo": "Zombie",
+        "_anio": 2013,
+        "_sinopsis": "Después del apocalipsis zombie, la sobreviviente Julie es rescatada de un ataque de zombies por R, quién también es uno de los muertos vivientes. Sin",
+        "_link": "https://www.starz.com/ar/movies/zombie-50752",
+        "_director": "Jonathan Levine"
+    },
+    {
+        "_id": {
+            "$oid": "61fa464615e6ee3dde639922"
+        },
+        "_titulo": "Dioses de Egipto",
+        "_anio": 2016,
+        "_sinopsis": "Bek, un héroe mortal, se une al dios Horus en una alianza contra Set, el despiadado dios de las tinieblas, que ha usurpado el trono de Egipto,",
+        "_link": "https://www.starz.com/ar/movies/dioses-de-egipto-59238",
+        "_director": "Alex Proyas"
+    },
+    {
+        "_id": {
+            "$oid": "61fa464a15e6ee3dde639923"
+        },
+        "_titulo": "Sicario",
+        "_anio": 2015,
+        "_sinopsis": "En el área fronteriza y anárquica que se extiende entre los Estados Unidos y México, una agente idealista del FBI es reclutada por un funcionario",
+        "_link": "https://www.starz.com/ar/movies/sicario-50878",
+        "_director": "Denis Villeneuve"
+    },
+    {
+        "_id": {
+            "$oid": "61fa464d15e6ee3dde639924"
+        },
+        "_titulo": "Halloween III: El imperio de las brujas",
+        "_anio": 1982,
+        "_sinopsis": "Un malvado fabricante de juguetes planea vender millones de máscaras que matarán a todos los niños que las usen la noche de Halloween.",
+        "_link": "https://www.starz.com/ar/movies/halloween-iii-el-imperio-de-las-brujas-29999",
+        "_director": "Tommy Lee Wallace"
+    },
+    {
+        "_id": {
+            "$oid": "61fa465815e6ee3dde639925"
+        },
+        "_titulo": "Peligro en Bangkok",
+        "_anio": 2008,
+        "_sinopsis": "Joe (Nicolas Cage) es un asesino profesional que llega a Bangkok para atender algunos asuntos. Inesperadamente se encuentra entrenando a una joven",
+        "_link": "https://www.starz.com/ar/movies/peligro-en-bangkok-49853",
+        "_director": "Oxide Pang Chun"
+    },
+    {
+        "_id": {
+            "$oid": "61fa465b15e6ee3dde639926"
+        },
+        "_titulo": "Tyler Perry's A Madea Christmas",
+        "_anio": 2013,
+        "_sinopsis": "A Madea la engatusan para ayudar a una amiga para hacer una visita sorpresa durante la Navidad, a su hija que vive en el campo. Pero la sorpresa",
+        "_link": "https://www.starz.com/ar/movies/tyler-perrys-a-madea-christmas-51369",
+        "_director": "Tyler Perry"
+    },
+    {
+        "_id": {
+            "$oid": "61fa465f15e6ee3dde639927"
+        },
+        "_titulo": "A conseguir trabajo",
+        "_anio": 2016,
+        "_sinopsis": "Cuando Will se queda sin trabajo y a Jillian la despiden, la joven pareja y sus amigos deben soportar la humillación pública, novatadas y pruebas de",
+        "_link": "https://www.starz.com/ar/movies/a-conseguir-trabajo-30233",
+        "_director": "Dylan Kidd"
+    },
+    {
+        "_id": {
+            "$oid": "61fa466215e6ee3dde639928"
+        },
+        "_titulo": "Casino",
+        "_anio": 1995,
+        "_sinopsis": "Esta historia se desarrolla en Las Vegas, en 1973, y está basada en hechos sobre la operación de un casino multimillonario de la mafia donde las",
+        "_link": "https://www.starz.com/ar/movies/casino-43838",
+        "_director": "Martin Scorsese"
+    },
+    {
+        "_id": {
+            "$oid": "61fa466615e6ee3dde639929"
+        },
+        "_titulo": "Dulce venganza 2",
+        "_anio": 2013,
+        "_sinopsis": "Del director de la aclamada remake del 2010, este nuevo episodio impactante muestra a una modelo brutalizada que sobrevive para buscar su venganza. ",
+        "_link": "https://www.starz.com/ar/movies/dulce-venganza-2-25826",
+        "_director": "Steven R. Monroe"
+    },
+    {
+        "_id": {
+            "$oid": "61fa466915e6ee3dde63992a"
+        },
+        "_titulo": "Pobres divas",
+        "_anio": 2011,
+        "_sinopsis": "Nora y Mary Domínguez, dos hermanas que llevan una vida fácil y llena de lujos en Beverly Hills, lo pierden todo cuando su padre muere súbitamente.",
+        "_link": "https://www.starz.com/ar/movies/pobres-divas-50421",
+        "_director": "Angel Gracia"
+    },
+    {
+        "_id": {
+            "$oid": "61fa466c15e6ee3dde63992b"
+        },
+        "_titulo": "La última puerta",
+        "_anio": 1999,
+        "_sinopsis": "Johnny Depp es contratado por un fiel satánico que se hace pasar por un erudito de la demonología para localizar dos escasos volúmenes de una",
+        "_link": "https://www.starz.com/ar/movies/la-última-puerta-42904",
+        "_director": "Roman Polanski"
+    },
+    {
+        "_id": {
+            "$oid": "61fa467015e6ee3dde63992c"
+        },
+        "_titulo": "2012",
+        "_anio": 2009,
+        "_sinopsis": "El mundo se enfrenta a una catástrofe de proporciones apocalípticas, las ciudades quedan destruidas y los continentes se desmoronan.  En el año 2012",
+        "_link": "https://www.starz.com/ar/movies/2012-37333",
+        "_director": "Roland Emmerich"
+    },
+    {
+        "_id": {
+            "$oid": "61fa467315e6ee3dde63992d"
+        },
+        "_titulo": "Belly",
+        "_anio": 1998,
+        "_sinopsis": "Dos mafiosos tienen una epifanía.",
+        "_link": "https://www.starz.com/ar/movies/belly-39540",
+        "_director": "Hype Williams"
+    },
+    {
+        "_id": {
+            "$oid": "61fa467715e6ee3dde63992e"
+        },
+        "_titulo": "Requiem por un sueño",
+        "_anio": 2000,
+        "_sinopsis": "Cuatro personas luchan contra una drogadicción que llega a niveles insaciables. Pese a sus buenas intenciones, las drogas los vencen y sus vidas",
+        "_link": "https://www.starz.com/ar/movies/requiem-por-un-sueño-23724",
+        "_director": "Darren Aronofsky"
+    },
+    {
+        "_id": {
+            "$oid": "61fa467a15e6ee3dde63992f"
+        },
+        "_titulo": "The Dresser",
+        "_anio": 2015,
+        "_sinopsis": "En esta historia perversamente divertida y conmovedora, Sir reflexiona sobre sus logros y busca reconciliar sus turbulentas amistades con sus",
+        "_link": "https://www.starz.com/ar/movies/the-dresser-26226",
+        "_director": "Richard Eyre"
+    },
+    {
+        "_id": {
+            "$oid": "61fa467e15e6ee3dde639930"
+        },
+        "_titulo": "Ali",
+        "_anio": 2001,
+        "_sinopsis": "Basada en la vida del tan controvertido, pero indiscutiblemente electrizante boxeador, Muhammad Ali.",
+        "_link": "https://www.starz.com/ar/movies/ali-37309",
+        "_director": "Michael Mann"
+    },
+    {
+        "_id": {
+            "$oid": "61fa468115e6ee3dde639931"
+        },
+        "_titulo": "Hombres De Negro",
+        "_anio": 1997,
+        "_sinopsis": "HOMBREHOMBRES DE NEGRO sigue las peripecias de los agentes K y J, miembros de una organización ultrasecreta establecida para monitorear la actividad",
+        "_link": "https://www.starz.com/ar/movies/hombres-de-negro-47625",
+        "_director": "Barry Sonnenfeld"
+    },
+    {
+        "_id": {
+            "$oid": "61fa468415e6ee3dde639932"
+        },
+        "_titulo": "Best F(r)iends: Volume 1",
+        "_anio": 2018,
+        "_sinopsis": "El dúo dinámico detrás de THE ROOM y THE DISASTER ARTIST (Tommy Wiseau y Greg Sestero) vuelven a encontrarse después de 15 años en este nuevo clásico",
+        "_link": "https://www.starz.com/ar/movies/best-f-r-iends-volume-1-62746",
+        "_director": "Justin MacGregor"
+    },
+    {
+        "_id": {
+            "$oid": "61fa468815e6ee3dde639933"
+        },
+        "_titulo": "Dónde Está El Dinero",
+        "_anio": 2017,
+        "_sinopsis": "Un joven de agudo intelecto, proveniente de las calles de South Central, debe ser reclutado en una fraternidad elitista en USC para recuperar dinero",
+        "_link": "https://www.starz.com/ar/movies/dónde-está-el-dinero-60447",
+        "_director": "Scott Zabielski"
+    },
+    {
+        "_id": {
+            "$oid": "61fa468b15e6ee3dde639934"
+        },
+        "_titulo": "Los ilusionistas: Nada es lo que parece",
+        "_anio": 2013,
+        "_sinopsis": "Un thriller de misterio protagonizado por Mark Ruffalo y Woody Harrelson. Cuatro magos talentosos son sacados del anonimato para convertirse en los",
+        "_link": "https://www.starz.com/ar/movies/los-ilusionistas-nada-es-lo-que-parece-51825",
+        "_director": "Louis Leterrier"
+    },
+    {
+        "_id": {
+            "$oid": "61fa468e15e6ee3dde639935"
+        },
+        "_titulo": "El Justiciero",
+        "_anio": 2014,
+        "_sinopsis": "Un ex-comando sale del retiro y pone sus habilidades especiales a trabajar para rescatar a una chica que está bajo el control de unos criminales",
+        "_link": "https://www.starz.com/ar/movies/el-justiciero-22163",
+        "_director": "Antoine Fuqua"
+    },
+    {
+        "_id": {
+            "$oid": "61fa469215e6ee3dde639936"
+        },
+        "_titulo": "Punto ciego",
+        "_anio": 2018,
+        "_sinopsis": "Los amigos de toda la vida Daveed Diggs y Rafael Casal coescribieron y protagonizaron esta entretenida historia sobre las interacciones de las razas",
+        "_link": "https://www.starz.com/ar/movies/punto-ciego-60449",
+        "_director": "Carlos López Estrada"
+    },
+    {
+        "_id": {
+            "$oid": "61fa469615e6ee3dde639937"
+        },
+        "_titulo": "Crepúsculo La Saga: Amanecer - Parte 1",
+        "_anio": 2011,
+        "_sinopsis": "Drama de fantasía protagonizada por Robert Pattinson y Kristen Stewart. Después de regresar de su Luna de miel, Bella y Edward se sorprenden al",
+        "_link": "https://www.starz.com/ar/movies/crepúsculo-la-saga-amanecer-parte-1-50666",
+        "_director": "Bill Condon"
+    },
+    {
+        "_id": {
+            "$oid": "61fa469a15e6ee3dde639938"
+        },
+        "_titulo": "Pasión inocente",
+        "_anio": 2014,
+        "_sinopsis": "Megan, una esposa y madre, decide que la familia debe acoger a la estudiante de intercambio, Sophie.",
+        "_link": "https://www.starz.com/ar/movies/pasión-inocente-52225",
+        "_director": "Drake Doremus"
+    },
+    {
+        "_id": {
+            "$oid": "61fa469d15e6ee3dde639939"
+        },
+        "_titulo": "Fenómeno siniestro 2",
+        "_anio": 2012,
+        "_sinopsis": "Un año después de que un equipo de filmación pasara una noche fatal en el Hospital Psiquiátrico Collingwood, un nuevo equipo vuelve a los pasillos en",
+        "_link": "https://www.starz.com/ar/movies/fenómeno-siniestro-2-51727",
+        "_director": "John Poliquin"
+    },
+    {
+        "_id": {
+            "$oid": "61fa46a115e6ee3dde63993a"
+        },
+        "_titulo": "Divergente",
+        "_anio": 2014,
+        "_sinopsis": "En el futuro, una adolescente aprende que es una \"Divergente\". Cuando se entera del complot de un malvado líder para asesinar a todos los divergentes",
+        "_link": "https://www.starz.com/ar/movies/divergente-50899",
+        "_director": "Neil Burger"
+    },
+    {
+        "_id": {
+            "$oid": "61fa46a415e6ee3dde63993b"
+        },
+        "_titulo": "De Tyler Perry: El club de las madres solteras",
+        "_anio": 2014,
+        "_sinopsis": "Cinco madres solteras en problemas dejan de lado sus diferencias para formar un grupo de apoyo, hallan inspiración y humor en su nueva hermandad y se",
+        "_link": "https://www.starz.com/ar/movies/de-tyler-perry-el-club-de-las-madres-solteras-51328",
+        "_director": "Tyler Perry"
+    },
+    {
+        "_id": {
+            "$oid": "61fa46a815e6ee3dde63993c"
+        },
+        "_titulo": "Halloween 5: la venganza de Michael Myers",
+        "_anio": 1989,
+        "_sinopsis": "Los ciudadanos de Haddonfield, Illinois, están a punto de soportar la venganza de Michael Myers, ya que el presunto asesino muerto ha vuelto para a",
+        "_link": "https://www.starz.com/ar/movies/halloween-5-la-venganza-de-michael-myers-52080",
+        "_director": "Dominique Othenin-Girard"
+    },
+    {
+        "_id": {
+            "$oid": "61fa46ab15e6ee3dde63993d"
+        },
+        "_titulo": "Enemigo invisible",
+        "_anio": 2016,
+        "_sinopsis": "La coronel Katherine Powell dirige una misión secreta de drones para capturar a un grupo de terroristas que vive en una casa de seguridad en Narobi,",
+        "_link": "https://www.starz.com/ar/movies/enemigo-invisible-38259",
+        "_director": "Gavin Hood"
+    },
+    {
+        "_id": {
+            "$oid": "61fa46ae15e6ee3dde63993e"
+        },
+        "_titulo": "Jerry Maguire: Amor y desafio",
+        "_anio": 1996,
+        "_sinopsis": "Tom Cruise hace su mejor actuación hasta la fecha (Neil Rosen, NY-1) como representante deportivo que de repente descubre sus escrúpulos y en",
+        "_link": "https://www.starz.com/ar/movies/jerry-maguire-amor-y-desafio-29696",
+        "_director": "Cameron Crowe"
+    },
+    {
+        "_id": {
+            "$oid": "61fa46b115e6ee3dde63993f"
+        },
+        "_titulo": "Crepúsculo la saga: Amanecer – Parte 2",
+        "_anio": 2012,
+        "_sinopsis": "En el quinto y último capítulo de la saga de Crepúsculo, el nacimiento del hijo de Bella y Edward enciende las fuerzas que amenazan con destruirlos a",
+        "_link": "https://www.starz.com/ar/movies/crepúsculo-la-saga-amanecer-–-parte-2-50834",
+        "_director": "Bill Condon"
+    }
+]
